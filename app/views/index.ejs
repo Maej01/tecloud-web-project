@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <% include partials/template/head.ejs %>
+</head>
+<body id="<%= pageID %>">
+    <!-- header template-->
+    <% include partials/template/header.ejs %>
+
+    <!-- products section-->
+    <div class="container">
+        <!-- including the first index content -->
+        <% include partials/content/index_first_content.ejs %>
+
+        <!-- including the first index content -->
+        <% include partials/content/index_second_content.ejs %>
+    </div>
+
+    <!-- including the js scripts template -->
+    <% include partials/template/jsscripts.ejs %>
+
+</body>
+    <!-- including the footer template -->
+    <% include partials/template/footer.ejs %>
+</html>

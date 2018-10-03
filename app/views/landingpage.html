@@ -1,0 +1,357 @@
+<!-- LANDING PAGE -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="iconfont/material-icons.css">
+    <!-- Materialize link-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    
+    <title>Landing Page</title>
+</head>
+<body>
+
+    <!--  header -->
+    <header>
+        <nav class="nav-wrapper grey darken-3">
+            <div class="container">
+                <a href="#" class="brand-logo">TeCloud<i class="material-icons right prefix">cloud</i></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu-links">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Insurance Company</a></li>
+                    <li><a href="#">Service Providers</a></li>
+                    <li><a href="#">Organizations</a></li>
+                </ul>
+
+                <!-- mobile menu view -->
+                <ul class="sidenav grey lighten-4" id="mobile-menu-links">
+                    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Insurance Company</a></li>
+                    <li><a href="#">Service Providers</a></li>
+                    <li><a href="#">Organizations</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="col s12 l12 ">
+            <div class="bigRectangle col s12 l7 center push-l5">
+                <div class="card ">
+                    <div class="card-content">
+                        <h2 class="wow zoomIn col s12 l12 center">AppiHealth</h2>
+                        <h3 class="wow tada col s12 l12 center">Your digital medical scheme</h3>
+                        <btutton class="btn-small blue col s12 m8 l6 center offset-m2 offset-l3">Login</btutton>
+                        
+                    </div>
+                </div>
+            </div> <!-- end of big rectangles -->
+            <!-- small rectangles -->
+            <div class="col s12 l4 pull-l7 ">
+                <!--  smaller devices template-->
+                <div class="card" id="sm_device_card">
+                    <div class="card-image hide-on-med-and-up">
+                        <img src="images/recImg.png" alt="" class="responsive-img">
+                        <a href="#" onclick="openInsSlideMenu()" class="halfway-fab btn-floating green pulse">
+                            <i class="material-icons right">chevron_right</i>
+                        </a>
+                    </div>
+                    <div class="card-content hide-on-med-and-up">
+                        <span class="card-title">Insurance Compnaies</span>
+                    </div>
+                </div> 
+                <div class="card" id="sm_device_card">
+                    <div class="card-image hide-on-med-and-up">
+                        <img src="images/recImg.png" alt="" class="responsive-img">
+                        <a href="#" onclick="openSlideMenu()" class="halfway-fab btn-floating green pulse">
+                            <i class="material-icons right">chevron_right</i>
+                        </a>
+                    </div>
+                    <div class="card-content hide-on-med-and-up">
+                        <span class="card-title">Service Providers</span>
+                    </div>
+                </div>
+                <div class="card" id="sm_device_card">
+                    <div class="card-image hide-on-med-and-up">
+                        <img src="images/recImg.png" alt="" class="responsive-img">
+                        <a href="#" onclick="openInsSlideMenu()" class="halfway-fab btn-floating green pulse">
+                            <i class="material-icons right">chevron_right</i>
+                        </a>
+                    </div>
+                    <div class="card-content hide-on-med-and-up">
+                        <span class="card-title">Organizations</span>
+                    </div>
+                </div>
+                <!-- end smaller devices template -->
+                <!-- medium and large devices template-->
+                <div class="card med-lg-device-card hide-on-small-only">
+                    <div class="card-icon blue col m5 l5 center">
+                        <i class="material-icons white-text">archive</i>
+                    </div>
+                    <div class="card-content col m6 l6 ">
+                        <span class="card-title left">Insurance Companies
+                            <a href="#" onclick="openInsSlideMenu()">
+                                <i class="material-icons grey-text">chevron_right</i>
+                            </a>
+                        </span>
+                    </div>  
+                </div>
+                <!-- slide nav menu -->
+                <!--Insurance Companies slide nav menu-->
+                <div id="ins-slide-menu" class="ins-slide-nav">
+                        <!-- search box -->
+                        <!-- <div class="search-box">
+                            <input class="txt-search" type="text" name="" placeholder="Type to search">
+                            <a href="#" class="btn-search"><i class="material-icons">search</i></a>
+                        </div> -->
+                        <a href="#" class="btn-close right" onclick="closeInsSlideMenu()">
+                            <i class="material-icons red darken-2 tooltipped" data-tooltip="close panel">close</i></a>
+                        <a href="#" class="side-links"><i class="material-icons side-nav-icons left">code</i>Starco Insurance Company</a>
+                        <a href="#" class="side-links"><i class="material-icons side-nav-icons left">phone_android</i>Aeurol Insurance Company</a>
+                        <a href="#" class="side-links"><i class="material-icons side-nav-icons left">graphic_eq</i>Ritcorp</a>
+                        <a href="#" class="side-links"><i class="material-icons side-nav-icons left">devices</i>National Insurance Company</a>
+                        
+                </div><!-- end of slide nav menu -->
+                <!-- Service providers medium and large devices template-->
+                <div class="card med-lg-device-card hide-on-small-only">
+                        <div class="card-icon blue col m5 l5 center">
+                            <i class="material-icons white-text">details</i>
+                        </div>
+                        <div class="card-content col m6 l6 ">
+                            <span class="card-title left">Service Providers
+                                <a href="#" onclick="openSpSlideMenu()">
+                                    <i class="material-icons grey-text">chevron_right</i>
+                                </a>
+                            </span>
+                        </div>  
+                    </div>
+                    <!-- Service providers slide nav menu -->
+                    <div id="sp-slide-menu" class="sp-slide-nav">
+                            <!-- search box -->
+                            <!-- <div class="search-box">
+                                <input class="txt-search" type="text" name="" placeholder="Type to search">
+                                <a href="#" class="btn-search"><i class="material-icons">search</i></a>
+                            </div> -->
+                            <a href="#" class="btn-close right" onclick="closeSpSlideMenu()">
+                                <i class="material-icons red darken-2 tooltipped" data-tooltip="close panel">close</i></a>
+                            <a href="#" class="side-links"><i class="material-icons side-nav-icons left">code</i>Hospitals</a>
+                            <a href="#" class="side-links"><i class="material-icons side-nav-icons left">phone_android</i>Pharmacy</a>
+                            <a href="#" class="side-links"><i class="material-icons side-nav-icons left">graphic_eq</i>Doctors</a>
+                            <a href="#" class="side-links"><i class="material-icons side-nav-icons left">devices</i>Labs</a>
+                            
+                    </div> <!-- end of slide nav menu -->
+                    <!-- end of meet the team section-->
+                    <!-- Organizations medium and large devices template-->
+                    <div class="card med-lg-device-card hide-on-small-only">
+                        <div class="card-icon blue col m5 l5 center">
+                            <i class="material-icons white-text">dashboard</i>
+                        </div>
+                        <div class="card-content col m6 l6 ">
+                            <span class="card-title left">Organizations
+                                <a href="#" onclick="openOrgSlideMenu()">
+                                    <i class="material-icons  grey-text">chevron_right</i>
+                                </a>
+                            </span>
+                        </div>  
+                    </div>
+                    <!-- organization slide nav menu -->
+                    <div id="org-slide-menu" class="org-slide-nav">
+                            <!-- search box -->
+                            <!-- <div class="search-box">
+                                <input class="txt-search" type="text" name="" placeholder="Type to search">
+                                <a href="#" class="btn-search"><i class="material-icons">search</i></a>
+                            </div> -->
+                            <a href="#" class="btn-close right" onclick="closeOrgSlideMenu()">
+                                <i class="material-icons red darken-2 tooltipped" data-tooltip="close panel">close</i></a>
+                            <a href="#" class="side-links" onclick="ngoDispMsg()">
+                                <i class="material-icons side-nav-icons left">code</i>NGO&apos;s
+                            </a>
+                            <a href="#" class="side-links" onclick="pvDispMsg()">
+                                <i class="material-icons side-nav-icons left">phone_android</i>Private Organization</a>
+                            <a href="#" class="side-links" onclick="govtDispMsg()">
+                                <i class="material-icons side-nav-icons left">graphic_eq</i>Government Agencies</a>
+                            
+                    </div> <!-- end of organization slide nav menu -->
+                    <!-- end of organization section-->
+
+                    <!-- NGO message-->
+                    <div id="ngoMessage">
+                        <p>This is a Group for young computer enthusiasts, 
+                            who are willing devout themselves into the tech world
+                            and aquire vast knowledge vast knowlege in the IT domain.
+                        </p>
+                    </div>
+
+                     <!-- Private organization message-->
+                     <div id="pvMessage">
+                        <p>This is a Group for young computer enthusiasts, 
+                            who are willing devout themselves into the tech world
+                            and aquire vast knowledge vast knowlege in the IT domain.
+                        </p>
+                    </div>
+
+                     <!-- NGO message-->
+                     <div id="govtMessage">
+                        <p>This is a Group for young computer enthusiasts, 
+                            who are willing devout themselves into the tech world
+                            and aquire vast knowledge vast knowlege in the IT domain.
+                        </p>
+                    </div>
+
+             </div> <!--small rectangles -->
+            
+        </div><!-- end of main col s12 l12-->
+    </div><!-- end of row -->
+
+    
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l4">
+                    <h5 class="wow jackInTheBox">About Us</h5>
+                    <hr>
+                    <p>TeCloud is a company of young computer enthusiasts, 
+                        who devout themselves into the tech world to 
+                        create apps as a contribution to help make the world a better place.
+                    </p>
+                </div>
+                <div class="col s12 l3">
+                    <h5 class="wow jackInTheBox">Partners</h5>
+                    <hr>
+                    <ul>
+                        <li><a href="#" class="grey-text text-lighten-3 wow flash">Facebook</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3 wow flash">Project Pikin</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3 wow flash">E-health Africa</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3 wow flash">Tech Crunch</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3 wow flash">Git-hub</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3 wow flash">Oracle</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 l4">
+                    <h5 class="wow jackInTheBox">connect with us</h5>
+                    <hr>
+                    <!-- social icons and links -->
+                    <a href="#" class="btn-floating btn-small indigo darken-2 tooltipped pulse wow rollIn" data-wow-delay=".5s" data-tooltip="visit our facebook page" id="social_media_icons">
+                        <i class="fab fa-facebook"></i></a>
+                    <a href="#" class="btn-floating btn-small blue lighten-1 tooltipped pulse wow rollIn" data-wow-delay=".5s" data-tooltip="follow us on Twitter" id="social_media_icons">
+                        <i class="fab fa-twitter"></i></a> 
+                    <a href="#" class="btn-floating btn-small indigo darken-4 tooltipped pulse wow rollIn" data-wow-delay=".5s" data-tooltip="follow us on linkedin" id="social_media_icons">
+                        <i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="btn-floating btn-small  darken-2 lighten-2 tooltipped pulse wow rollIn" data-wow-delay=".5s" data-tooltip="follow us on Instagram" id="social_media_icons">
+                        <i class="fab fa-instagram"></i></a>
+                    <hr>
+                    <!-- email and office address -->
+                    <p class="wow zoomIn"><i class="material-icons left">web</i>www.tecloud.com</p>
+                    <p class="wow zoomIn"><i class="material-icons left">home</i>56 Berwick street, Freetown, Sierra leone</p>
+                    <p class="wow zoomIn"><i class="material-icons left">phone_iphone</i>+232 99-507205 | +232 79-712365</p>
+                </div>
+            </div>
+            <div class="footer copyright grey darken-4">
+                <div class="container center-align">Copyright &copy; TP, 2018</div>
+             </div>
+        </div>
+    </footer>
+
+    
+    <!-- jquery link -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- jquery-ui-->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Matrailize js link-->
+    <script src="js/materialize.min.js"></script>
+    <!-- wow js script-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.tooltipped').tooltip(); //tooltip function
+            $('.sidenav').sidenav(); //sidenave function
+            $('#ngoMessage').hide();
+            $('#pvMessage').hide();
+            $('#govtMessage').hide();
+        });
+        $(function(){
+          new WOW().init(); 
+        });
+
+        //insurance company slide menu functions
+        function openInsSlideMenu(){
+            document.getElementById('ins-slide-menu').style.width='350px';
+            
+            //checking if the another slide menu is opened
+            if(document.getElementById('sp-slide-menu').style.width=='350px' || document.getElementById('org-slide-menu').style.width=='350px'){
+                document.getElementById('sp-slide-menu').style.width='0';
+                document.getElementById('org-slide-menu').style.width='0';
+                
+            }
+            
+        }
+        function closeInsSlideMenu(){
+            document.getElementById('ins-slide-menu').style.width='0';
+        }
+
+        //service providers slide menu functons 
+        function openSpSlideMenu(){
+
+            document.getElementById('sp-slide-menu').style.width='350px';
+
+            if(document.getElementById('ins-slide-menu').style.width=='350px' || document.getElementById('org-slide-menu').style.width=='350px'){
+                document.getElementById('ins-slide-menu').style.width='0';
+                document.getElementById('org-slide-menu').style.width='0';
+            }
+        }
+        function closeSpSlideMenu(){
+            document.getElementById('sp-slide-menu').style.width='0';
+        }
+
+        //organization slide menu functons
+        function openOrgSlideMenu(){
+
+            document.getElementById('org-slide-menu').style.width='350px';
+
+            if(document.getElementById('ins-slide-menu').style.width=='350px' || document.getElementById('sp-slide-menu').style.width=='350px'){
+                document.getElementById('ins-slide-menu').style.width='0';
+                document.getElementById('sp-slide-menu').style.width='0';
+            }
+        }
+        function closeOrgSlideMenu(){
+            document.getElementById('org-slide-menu').style.width='0';
+        }
+
+        //NGO dialog message box function
+        function ngoDispMsg(){
+            // $('#org-slide-menu').hide();
+            $('#ngoMessage').dialog({fadeIn: "2500", title: "NGO and TeCloud", draggable: false, modal: true});
+            // $('#ord-slide-menu').css({"width":"0"});  
+        }   
+
+        //Private dialog message box function
+        function pvDispMsg(){
+            // $('#org-slide-menu').hide();
+            $('#pvMessage').dialog({fadeIn: "2500", title: "Private orgnizaton and TeCloud", draggable: false, modal: true});
+            // $('#ord-slide-menu').css({"width":"0"});  
+        } 
+
+        //Govt dialog message box function
+        function govtDispMsg(){
+            // $('#org-slide-menu').hide();
+            $('#govtMessage').dialog({fadeIn: "2500", title: "Government and TeCloud", draggable: false, modal: true});
+            // $('#ord-slide-menu').css({"width":"0"});  
+        } 
+    </script>
+
+</body>
+</html>

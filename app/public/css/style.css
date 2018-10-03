@@ -1,0 +1,231 @@
+/* LANDING PAGE STYLE */
+.nav-wrapper{
+    margin-bottom: 30px;
+    box-shadow: 0px 15px 15px gray;   
+}
+
+nav img{
+    width: 150px;
+    height: 100px;
+    margin-top: -15px;
+}
+
+.bigRectangle .card{
+    margin-top: 15px;
+    margin-left: -100px;
+    height: 400px;
+    background-color: #008b8b;/* #fafafa; */;
+  }
+
+.bigRectangle .card:hover{
+    box-shadow: 0px 8px 15px #000; /*top & bottom=0, left & right=8px, glow=15px, color=black */
+}
+  
+.bigRectangle .card h2{
+    font-size: 60px;
+    color:  #87ceff;
+    margin-top: 120px;
+
+  }
+  
+.bigRectangle .card h3{
+    font-size: 23px;
+  }
+
+/*SERVICES SECTION START*/
+/* .services_bar{
+    height: 50px;
+    background-color: #000; 
+    opacity: 0.9;
+    margin-bottom: 30px;
+    box-shadow: 0px 15px 15px gray;   
+} */
+
+.services_bar h4{
+    color: #cccccc;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.services .card{
+    width: 400px;
+    height: 250px;
+    margin: 50px 0;
+    box-shadow: 0px 10px 10px gray;
+}
+
+/* .services .rightDev1{
+    margin-top: -300px;
+    float: right;
+}
+
+.services .rightDev2{
+    margin-top: -300px;
+    float: right;
+} */
+
+.services .card:hover{
+    box-shadow: 0px 15px 10px gray;
+}
+
+.services .card .card-content h4{
+    font-size: 20px;
+}
+
+  /*Small Rectangle*/
+.med-lg-device-card{
+    height: 150px;
+    width: 400px;
+    margin-top: 30px;
+}
+.med-lg-device-card:hover{
+    box-shadow: 0px 8px 15px #000; /*top & bottom=0, left & right=8px, glow=15px, color=black */
+    margin-top: 10px; 
+}
+.med-lg-device-card .card-icon{
+    height: 150px;
+}
+.med-lg-device-card .card-icon i{
+    font-size: 100px;
+    margin-top: 20%;
+}
+ .med-lg-device-card .card-content .card-title{
+    margin-top: 30px;
+    font-size: 15px;
+ }
+ .med-lg-device-card .card-content i{
+     margin-top: -55px;
+     margin-left: 160px;
+ }
+ .med-lg-device-card .card-content i:hover{
+    border-radius: 20%;
+    color: #fff;
+    background: #000;
+    opacity: 1;
+}
+
+/*footer social media icons*/
+#social_media_icons{
+    margin: 0 5px;
+}
+
+
+/*small screen menu*/
+.sidenav{
+    height: 150px;
+}
+
+
+/*media query*/
+
+/* 1366 x 768 laptops and above*/
+@media screen and (min-width: 1366px){
+
+    /*slide bar*/
+    .slide-nav{
+        margin-top: -150px;
+        margin-left: 300px;
+        width: 0;
+        height: 300px;
+        position: fixed;
+        z-index: 1;
+        background-color: #111;
+        opacity: 0.6;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+}
+
+/* 1280 x 720 laptops and above*/
+@media screen and (min-width: 1280px){
+
+
+    /*slide bar*/
+    .slide-nav{
+        margin-top: -165px;
+        margin-left: 400px;
+        width: 0;
+        height: 300px;
+        position: fixed;
+        z-index: 1;
+        background-color: #111;
+        opacity: 0.6;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .services .rightDev1{
+        margin-top: -300px;
+        float: right;
+    }
+    
+    .services .rightDev2{
+        margin-top: -300px;
+        float: right;
+    }
+}
+
+/* screen of 800 x 1280 px */
+@media screen and (max-width: 800px){
+
+    .bigRectangle .card{
+        margin-top: 15px;
+        margin-left: 5px;
+        height: 400px;
+      }
+
+    .services .card{
+        width: 500px;
+        height: 250px;
+        margin-left: 80px;
+        margin-right: 50px; 
+    }
+
+} 
+
+
+/* @media screen and (max-width: 670px){
+    .smRectangles{
+        min-height: 200px;
+    }
+    .inner-card{
+        width: 300px;
+        height: 200px;
+        background-color: #000;
+    }
+}  */
+
+/*320 x 480 screen size*/
+@media screen and (max-width: 320px){
+
+    .bigRectangle .card{
+        margin-top: 15px;
+        margin-left: 5px;
+        height: 300px;
+    }
+    
+    .bigRectangle .card h2{
+        margin-top: 90px;
+        font-size: 25px;
+    }
+    .bigRectangle .card h3{
+        font-size: 15px;
+        margin-top: -5px;
+        margin-bottom: 60px;
+
+    }
+      /*Small Rectangle*/
+    .med-lg-device-card{
+        height: 150px;
+        width: 300px;
+        margin-top: 30px;
+        margin-left: -20px;
+    }
+
+    .services .card{
+        width: 300px;
+        height: 250px;
+        margin-left: 5px;
+    }
+
+}
