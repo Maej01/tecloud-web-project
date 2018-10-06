@@ -167,6 +167,16 @@ nav img{
 
 
 /*media query*/
+@media only screen and (max-width: 1920px){
+    #particles-js{
+        height: 100%;
+        background: #000;
+        width: 115.8%;
+        /* width: 143.5%; */
+        margin-left: -210px !important;
+        /* margin-top: -6%; */
+    }
+}
 
 /* 1366 x 768 laptops and above*/
 @media screen and (min-width: 1366px){
@@ -188,7 +198,6 @@ nav img{
 
 /* 1280 x 720 laptops and above*/
 @media screen and (min-width: 1280px){
-
 
     /*slide bar*/
     .slide-nav{
