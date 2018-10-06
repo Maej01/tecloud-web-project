@@ -1,4 +1,5 @@
 var express = require('express');
+var reload = require('reload');
 var app = express();
 
 //setting the port
@@ -22,4 +23,6 @@ app.use(require('./app/routes/contact'));
 
 app.listen(app.get('port'), function(){
     console.log('Tecloud server running on port'+ app.get('port'));
-})
+});
+
+reload(app);

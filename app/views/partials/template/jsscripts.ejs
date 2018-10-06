@@ -1,7 +1,10 @@
 <!-- scripts -->
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/particles.js"></script> 
+<script src="js/app.js"></script> 
 <script src="js/materialize.min.js"></script>
 <script src="js/wow.min.js"></script>
+
 
 <script>
 
@@ -9,6 +12,11 @@
         new WOW().init(); 
         $('.slider').slider({indicators : false, interval: 5000});
         $('.sidenav').sidenav();
+
+        //particles.js    
+        Particles.init({
+            selector: '.background'
+        });
         
         mixpanel.track("Video play");
     });

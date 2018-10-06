@@ -1,20 +1,57 @@
 /* LANDING PAGE STYLE */
-.nav-wrapper{
-    margin-bottom: 30px;
-    box-shadow: 0px 15px 15px gray;   
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans';
+    /* overflow: hidden; */
+}
+nav .nav-wrapper{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+nav .container{
+    margin-left: -30px !important;
+}
+
+nav ul li{
+    margin: 0 5px;
+    color: #fff !important;
+
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid #ffcc00;
+    transition: 0.2s;
 }
 
 nav img{
     width: 150px;
     height: 100px;
     margin-top: -15px;
+    margin-left: 30px;
 }
 
+#index_first_content{
+    margin-top: -60%;
+}
+
+#particles-js{
+    height: 100%;
+    background: #000;
+    width: 115.6%;
+    /* width: 143.5%; */
+    margin-left: -210px !important;
+    /* margin-top: -6%; */
+    
+}
 .bigRectangle .card{
     margin-top: 15px;
-    margin-left: -100px;
+    margin-left: -150px;
     height: 400px;
-    background-color: #008b8b;/* #fafafa; */;
+    width: 850px;
+    background-color: #000;
+    opacity: 0.5 !important;
+    /* background-image: url('../images/tedev.png'); */
+    /*background-color: #00b2ee; #fafafa; */;
   }
 
 .bigRectangle .card:hover{
@@ -23,23 +60,28 @@ nav img{
   
 .bigRectangle .card h2{
     font-size: 60px;
-    color:  #87ceff;
+    color:  #00B0F0;
     margin-top: 120px;
-
   }
   
 .bigRectangle .card h3{
+    margin-top: -20px;
+    width: 500px;
     font-size: 23px;
+    color: #fff;
+    font-stretch: ultra-expanded;
   }
 
 /*SERVICES SECTION START*/
-/* .services_bar{
+.services_bar{
     height: 50px;
+    width: 100%;
     background-color: #000; 
     opacity: 0.9;
+    margin-top: 4%;
     margin-bottom: 30px;
     box-shadow: 0px 15px 15px gray;   
-} */
+}
 
 .services_bar h4{
     color: #cccccc;
@@ -52,6 +94,10 @@ nav img{
     height: 250px;
     margin: 50px 0;
     box-shadow: 0px 10px 10px gray;
+}
+
+.services hr{
+    color: #d4d4d4;
 }
 
 /* .services .rightDev1{
@@ -74,24 +120,28 @@ nav img{
 
   /*Small Rectangle*/
 .med-lg-device-card{
-    height: 150px;
-    width: 400px;
-    margin-top: 30px;
+    height: 100px;
+    width: 300px;
+    margin-top: 10px !important;
+    margin-bottom: 50px !important;
+    
 }
 .med-lg-device-card:hover{
     box-shadow: 0px 8px 15px #000; /*top & bottom=0, left & right=8px, glow=15px, color=black */
-    margin-top: 10px; 
 }
 .med-lg-device-card .card-icon{
-    height: 150px;
+    height: 100px;
+    width: 100px !important;
+    background-color: #00B0F0;
 }
 .med-lg-device-card .card-icon i{
-    font-size: 100px;
-    margin-top: 20%;
+    font-size: 50px;
+    margin-top: 35%;
+    
 }
  .med-lg-device-card .card-content .card-title{
-    margin-top: 30px;
-    font-size: 15px;
+    margin-top: 15;
+    font-size: 10px;
  }
  .med-lg-device-card .card-content i{
      margin-top: -55px;

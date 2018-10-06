@@ -5,10 +5,12 @@
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "ejs": "^2.4.2",
+    "express": "^4.16.3",
     "mongoose": "^5.2.10",
     "node-mailer": "^0.1.1",
-    "ejs": "^2.4.2",
-    "express": "^4.16.3"
+    "particlesjs": "^2.2.3",
+    "reload": "^2.3.1"
   },
   "devDependencies": {},
   "scripts": {
