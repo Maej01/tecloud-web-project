@@ -5,7 +5,10 @@ var router = express.Router();
 router.get('/services', (req, res, next) =>{
     
     //response
-    res.send('this is the services page but still under development');
+    res.render('services', {
+        pageTitle: "services",
+        pageID: "services"
+    });
 
 });
 

@@ -1,42 +1,23 @@
 <html lang="en">
 <head>
+    <!-- head template -->
     <% include partials/template/head.ejs %>
 </head>
 <body id="<%= pageID %>">
+    <!-- header template -->
     <% include partials/template/header.ejs %>
-    <!-- products section-->
-    <div class="container">
-        <div class="row">
-            <div class="col l12">
-                <form action="" class="feedback-form col l6">
-                    <h3 class="center">Send us a feedback</h3>
 
-                    <label for="name">Name</label>
-                    <input type="text" id="feedback-form-name">
-
-                    <label for="title" >Title</label>
-                    <input type="text" id="feedback-form-title">
-
-                    <label for="message">Message</label>
-                    <input type="text" id="feedback-form-message">
-
-                    <input type="submit" class="btn-small blue" value="submit">
-                </form>
-
-                <div class="col l6">
-                    <h4 class="center">Recent Feedback</h4>
-                    <hr>
-                    <div class="feedback-messages"></div>
-
-                </div>
-            </div>
-        </div><!-- end of row -->
+    <!-- services content template -->
+    <div class="services_coll">
+        <h4 id="services_main_tip" class="center">Our Quality Services</h4>
+        <p id="services_tip" class="center">providing what you want, just in time with quality is our profession </p>
+        <% include partials/content/services_content.ejs %>
     </div>
 
-    <!-- including the footer template -->
+    <!-- footer template -->
     <% include partials/template/footer.ejs %>
 
-    <!-- including the js scripts template -->
+    <!-- js scripts template -->
     <% include partials/template/jsscripts.ejs %>
 
 </body>
