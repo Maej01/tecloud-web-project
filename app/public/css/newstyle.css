@@ -1,0 +1,179 @@
+/* LANDING PAGE STYLE */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans';
+    /* overflow: hidden; */
+}
+nav .nav-wrapper{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+nav .container{
+    margin-left: -2% !important;
+}
+
+nav ul li{
+    margin: 0 5px;
+    color: #fff !important;
+}
+
+nav ul li:hover{
+    border-bottom: 3px solid #ffcc00;
+    transition: 0.2s;
+}
+
+nav img{
+    width: 150px;
+    height: 100px;
+    margin-top: -15px;
+    margin-left: 10vh;
+}
+
+/* PARTICLES */
+#particles-js{
+    height: 100%;
+    background: #000;
+    width: 100%;  
+}
+
+.mainBg{
+    height: 500px;
+}
+
+/* HEADER REXTANGLES SECTION BOXES */
+.rectangles{
+    margin-top: -560px;
+}
+
+.rectangles .bigRectangle .card{
+    margin-top: 140px !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.rectangles .bigRectangle h2{
+    font-size: 45px;
+    color:  #00B0F0;
+}
+
+.rectangles .bigRectangle h3{
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.rectangles .smallRectangles{
+    margin-top: 60px;
+}
+
+.rectangles .smallRectangles h6{
+    font-size: 15px;
+}
+
+.rectangles .smallRectangles .card .card-icon{
+    height: 99.2px;
+    background-color: #00B0F0;
+}
+.rectangles .smallRectangles .card .card-icon i{
+    font-size: 50px;
+    margin-top: 25px;   
+}
+
+/*SERVICES SECTION STYLE*/
+ .services_bar{
+    height: 50px;
+    background-color: #000; 
+    opacity: 0.9;
+    margin-top: -22px;
+    margin-bottom: 5%;
+    box-shadow: 0px 15px 15px gray;   
+} 
+
+.services_bar h4{
+    color: #cccccc;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.services .card{
+    width: 80vh !important;
+    height: 45vh !important;
+    margin-bottom: 10vh;
+    box-shadow: 0px 10px 10px gray;
+    transition: 1s;
+}
+
+.services hr{
+    color: #d4d4d4 !important;
+}
+
+.services .btn-small {
+    background-color: #7030a8 !important;
+    box-shadow: 0px 15px 10px rgb(184, 180, 180);
+    transition: 1s;
+}
+
+.services .card:hover{
+    box-shadow: 0px 15px 10px rgb(194, 194, 194);
+    transition: 1s;
+}
+
+/* ABOUT SECTION STYLES */
+.aboutCards{
+    background-color: #00B0F0;
+}
+
+.aboutCards h2{
+    color: #4c4c4c;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.aboutCards h3{
+    color: #4c4c4c;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.aboutCards h4{
+    color: #4c4c4c;
+    font-size: 20px;
+}
+
+.about h5{
+    color: #4c4c4c;
+    font-size: 20px;
+}
+
+.aboutCards .card{
+    margin: 10px 0 50px 0;
+}
+
+.aboutCards i{
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    margin-left: 90px;
+    padding: 25px 25px;
+    border-radius: 50%;
+    background-color: #7030a8;
+    color: #fff;
+}
+
+
+@media screen and (min-width: 1280px){
+    /* .card-icon{
+        height: 9vw;
+    } */
+
+    .mainBg{
+        height: 600px;
+    }
+
+    .services_bar{
+        margin-top: -23px;   
+    } 
+
+    .services .card{
+        height: 38vh !important;
+    }
+}
+

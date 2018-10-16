@@ -1,9 +1,11 @@
 var express = require('express');
 var reload = require('reload');
 var app = express();
+var aboutData = require('./app/data/about.json');
 
 //setting the port
 app.set('port', process.env.PORT || 3000);
+app.set('aboutData', aboutData);
 
 //setting up a view engine
 app.set('view engine', 'ejs');

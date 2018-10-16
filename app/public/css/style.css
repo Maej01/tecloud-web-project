@@ -26,13 +26,14 @@ nav img{
     width: 150px;
     height: 100px;
     margin-top: -15px;
-    /* margin-left: 30px; */
+    margin-left: 10vh;
 }
 
 
 .header_content{
     margin-top: -130vh !important;
 }
+
 
 #particles-js{
     height: 120%;
@@ -65,7 +66,8 @@ nav img{
     height: 50px;
     background-color: #000; 
     opacity: 0.9;
-    margin-top: 12.1vh;
+    /* margin-top: 12.1vh; */
+    /* margin-top: 55vh; */
     margin-bottom: 5%;
     box-shadow: 0px 15px 15px gray;   
 } 
@@ -82,6 +84,14 @@ nav img{
     margin-bottom: 10vh;
     box-shadow: 0px 10px 10px gray;
     transition: 1s;
+}
+
+.services .slideInLeft .card{
+    margin-left: 10%;
+}
+
+.services .slideInRight .card{
+    margin-left: 10%;
 }
 
 .services hr{
@@ -131,8 +141,7 @@ nav img{
 }
 .med-lg-device-card .card .card-icon i{
     font-size: 10vh;
-    margin-top: 35%;
-    
+    margin-top: 35%;   
 }
  .med-lg-device-card .card .card-content .card-title{
     margin-top: 15;
@@ -160,6 +169,20 @@ nav img{
     height: 150px;
 }
 
+/* ABOUT SECTION STYLES */
+.aboutCards .card .card-content i{
+    font-size: 18vh;
+    margin-left: 27%;
+
+}
+
+
+@media screen and (width: 1920px){
+    .services_bar{
+        /* margin-top: 12.1vh; */
+        /* margin-top: 55vh;    */
+    } 
+}
 
 /* 1366 x 768 laptops and above*/
 @media screen and (min-width: 1366px){
@@ -194,14 +217,25 @@ nav img{
         width: 100%;  
     }
 
+    .bigRectangle .card h3{
+        margin-left: -18%;
+      }
+
     .services_bar{
-        margin-top: 21vh;  
+        /* margin-top: 20vh;   */
     } 
 
+    .med-lg-device-card .card{
+        margin-left: -10% !important;
+        
+    }
+
     .med-lg-device-card .card .card-icon{
-        height: 16.2vh !important;
-        width: 100px !important;
-        background-color: #00B0F0;
+        height: 16.1vh !important;
+    }
+
+    .med-lg-device-card .card .card-icon i{
+        margin-top: 25%;   
     }
 
     .services .card{

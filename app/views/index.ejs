@@ -6,10 +6,66 @@
 <body id="<%= pageID %>">
     <!-- header template-->
     <% include partials/template/header.ejs %>
-
-    <% include partials/content/header_content.ejs %>
+    
+    <div class="row mainBg">
+        <!-- checking the current page is the home -->
+        <% if(pageID == 'home') { %>
+            <div id="particles-js"></div> <!--particles js-->
+        <% } %>
+        
+        <div class="row rectangles">
+            <div class="container">
+                <div class="row">
+                    <!-- big card -->
+                    <div class="col s12 l7 bigRectangle">
+                        <div class="card">
+                            <div class="card-content">
+                                <h2 class="center">TeCloud Platform</h2>
+                                <h3 class="center white-text">The Home of Innovation</h3>
+                            </div> 
+                        </div> 
+                    </div>
+                    <!-- small cards -->
+                    <div class="col s12 l5 push-l2 smallRectangles">
+                        <div class="card wow zoomIn">
+                            <div class="card-icon col m4 l5 center">
+                                <i class="material-icons white-text ">archive</i> 
+                            </div>
+                            <div class="card-content">
+                                <h6 class="card-title center">TeCloud Platform</h6>
+                                <!-- <a href="#">get to know us more</a> -->
+                            </div>  
+                        </div>
+                        <div class="card wow zoomIn" data-wow-delay="0.5s">
+                            <div class="card-icon col m4 l5 center">
+                                <i class="material-icons white-text ">archive</i> 
+                            </div>
+                            <div class="card-content">
+                                <h6 class="card-title center">Services</h6>
+                                <!-- <a href="#">get to know us more</a> -->
+                            </div>  
+                        </div>
+                        <div class="card wow zoomIn" data-wow-delay="1s">
+                            <div class="card-icon col m4 l5 center">
+                                <i class="material-icons white-text ">archive</i> 
+                            </div>
+                            <div class="card-content">
+                                <h6 class="card-title center">Meet the team</h6>
+                                <!-- <a href="#">get to know us more</a> -->
+                            </div>  
+                        </div>
+                    </div> <!-- end of small rectangles section -->
+                </div> <!-- end of second row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of entire rectangles section-->
+    </div> <!-- end of main row -->
 
     <!-- sevrices template -->
+    <div class="row services_bar">
+        <h4 class="center">Our Services</h4>
+    </div> 
+
+    <!-- including the index services -->
     <% include partials/content/index_service_content.ejs %>
 
 

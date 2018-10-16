@@ -8,25 +8,87 @@
     <% include partials/template/header.ejs %>
 
     <div class="container">
-        <img id="about-logo" src="images/TeCloud-Logo-Transparent.png" alt="">
-        <p>The blockchain is an undeniam To date, the total value of the currency is close to $9 billion US. 
-            And blockchains can make other types of digital value. Like the internet (or your car), 
-            you don’t need to know how the blockchain works to use it. However, having a basic knowledge 
-            of this new technology shows why it’s considered revolutionary.So, we hope you enjoy this, 
-            What Is Blockchain Guide. And if you already know what blockchain is and want to become a 
-            blockchain developer (2018 – currently in high demand!) please check out our in depth 
-            blockchain tutorial and create your very first blockchain.
-        </p>
-        <br>
-        <p>The blockchain is an undeniam To date, the total value of the currency is close to $9 billion US. 
-            And blockchains can make other types of digital value. Like the internet (or your car), 
-            you don’t need to know how the blockchain works to use it. However, having a basic knowledge 
-            of this new technology shows why it’s considered revolutionary.So, we hope you enjoy this, 
-            What Is Blockchain Guide. And if you already know what blockchain is and want to become a 
-            blockchain developer (2018 – currently in high demand!) please check out our in depth 
-            blockchain tutorial and create your very first blockchain.
-        </p>
+        <!-- <img id="about-logo" src="images/TeCloud-Logo-Transparent.png" alt=""> -->
+        <h5 class="about">Company Profile</h5>
+        <% aboutDt.forEach(function(item){ %>
+            <p><%= item.company_profile %></p>
+        <% }); %>
     </div>
+    <div class="row aboutCards">
+            <h2 class="center">Know our interest</h2>
+            <h3 class="center">we are focused in pushing towards our goals</h3>
+            <div class="col s12 l3 wow flipInY" data-wow-delay="0.8s">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="fas fa-bullseye"></i>
+                        <h4 class="center"><b>Mission</b></h4>
+                        <!-- loading the mission data-->
+                        <% aboutDt.forEach(function(item){ %>
+                            <p><%= item.mission %></p>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l3 wow flipInY" data-wow-delay="1.2s">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="fas fa-eye"></i>
+                        <h4 class="center"><b>Vision</b></h4>
+                        <!-- loading the vision data -->
+                        <% aboutDt.forEach(function(item){ %>
+                            <p><%= item.vision %></p>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l3 wow flipInY" data-wow-delay="1.6s">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="fas fa-file-alt"></i>
+                        <h4 class="center"><b>Values</b></h4>
+                        <!-- loasding the values data -->
+                        <% aboutDt.forEach(function(item){ %>
+                            <p><%= item.values %></p>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l3 wow flipInY" data-wow-delay="2s">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="material-icons white-text">event_note</i>
+                        <h4 class="center"><b>Objective</b></h4>
+                        <!-- loading the objective data -->
+                        <% aboutDt.forEach(function(item){ %>
+                            <p><%= item.objective %></p>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of about cards -->
+        <div class="container">
+            <h5 class="about">Background of the Software Team</h5>
+            <!-- loading the background data -->
+            <% aboutDt.forEach(function(item){ %>
+                <p><%= item.background_of_softTeam %></p>
+            <% }); %>
+        </div> <!-- end of background of the software team-->
+        <div class="container">
+            <h5 class="about">Current Status</h5>
+            <!-- loading the current status data -->
+            <% aboutDt.forEach(function(item){ %>
+                <p><%= item.current_status %></p>
+            <% }); %>
+        </div> <!-- end of current status -->
+        <div class="container">
+            <h5 class="about">What we do:</h5>
+            <!-- loading the brief services data -->
+            <% aboutDt.forEach(function(item){ %>
+                <p><%= item.intro_of_services %></p>
+            <% }); %>
+        </div> <!-- end of brief intro of the sevices-->
+
+
       <!-- including the js scripts template -->
       <% include partials/template/jsscripts.ejs %>
 </body>
