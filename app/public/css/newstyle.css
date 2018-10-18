@@ -22,6 +22,11 @@ nav ul li:hover{
     transition: 0.2s;
 }
 
+/* nav ul li{
+    border-bottom: 3px solid #ffcc00;
+    transition: 0.2s;
+} */
+
 nav img{
     width: 150px;
     height: 100px;
