@@ -10,7 +10,8 @@
     "mongoose": "^5.2.10",
     "node-mailer": "^0.1.1",
     "particlesjs": "^2.2.3",
-    "reload": "^2.3.1"
+    "reload": "^2.3.1",
+    "xoauth2": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {

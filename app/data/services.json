@@ -1,0 +1,18 @@
+{
+    "Website": 
+    [ 
+        {
+            "title":"Website Development",
+            "description":"This is a Group for young computer enthusiasts, who are willing devout themselves into the tech world and aquire vast knowledge vast knowlege in the IT domain.",
+            "image":""
+        }
+    ],
+    "AppDev": [
+        {
+            "title": "App Development",
+            "description":"This is a Group for young computer enthusiasts, who are willing devout themselves into the tech world and aquire vast knowledge vast knowlege in the IT domain.",
+            "image":""
+        }
+    ]
+     
+}
