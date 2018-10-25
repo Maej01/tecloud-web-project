@@ -49,7 +49,7 @@ router.post('/contact', urlencodedPaser, (req, res) => {
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"Maej" <muhammadsesay8@gmail.com>', // sender address
-        to: 'muhammad.m.sesay@tpisent.io, jessekamara@gmail.com', // list of receivers
+        to: 'muhammad.m.sesay@tpisent.io, tecloudplatform@gmail.com', // list of receivers
         subject: 'TeCloud Contact', // Subject line
         // text: 'Yeah it works', // plain text body
         html: outputData // html body
