@@ -15,17 +15,41 @@
         new WOW().init(); 
         $('.slider').slider({indicators : false, interval: 5000});
         $('.sidenav').sidenav();
+
         $('select').formSelect();
         
         mixpanel.track("Video play");
-
-        //checking which clickes
 
     });
 
 </script>
 
+<!-- checking for the current page the user is viewing-->
+<% if(pageID == 'home') { %> 
+    <script>
+        $('#homeLink').addClass('li_border_style');
+    </script>
+<% } else if(pageID == 'about') { %>
+    <script>
+        $('#aboutLink').addClass('li_border_style');
+    </script>
+<% } else if(pageID == 'services') { %>
+    <script>
+        $('#servicesLink').addClass('li_border_style');
+    </script>
+<% } else if(pageID == 'our_team') { %>
+    <script>
+        $('#ourTeamLink').addClass('li_border_style');
+    </script>
+<% } else if(pageID == 'contact') { %>
+    <script>
+        $('#contactLink').addClass('li_border_style');
+    </script>
+<% } %>
 
-<% if(pageID == 'feedback') { %> 
-    <script src="/js/feedback.js"></script>
-<%}%>
+
+
+
+// <% if(pageID == 'feedback') { %> 
+//     <script src="/js/feedback.js"></script>
+// <%}%> 

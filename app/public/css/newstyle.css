@@ -22,6 +22,10 @@ nav ul li:hover{
     transition: 0.2s;
 }
 
+.li_border_style{
+    border-bottom: 3px solid #ffcc00;
+}
+
 /* nav ul li{
     border-bottom: 3px solid #ffcc00;
     transition: 0.2s;
