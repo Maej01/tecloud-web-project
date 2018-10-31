@@ -126,10 +126,6 @@ nav img{
     height: 380px;
 }
 
-.comp_profile_text{
-    margin-top: 150px !important;
-    margin-bottom: 150px !important;
-}
 
 .aboutCards h2{
     color: #4c4c4c;
@@ -181,9 +177,10 @@ nav img{
 
 
 @media screen and (min-width: 1280px){
-    /* .card-icon{
-        height: 9vw;
-    } */
+    .comp_profile_text{
+        margin-top: 150px !important;
+        margin-bottom: 150px !important;
+    }
 
     .mainBg{
         height: 600px;

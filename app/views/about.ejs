@@ -11,7 +11,7 @@
         <h5 class="about"><b>Company Profile</b></h5>
         <% aboutDt.forEach(function(item){ %>
             <p><%= item.company_profile %></p>
-            <p><%= item.more_profile %></p>
+            <p class="hide-on-small-only"><%= item.more_profile %></p>
         <% }); %>
     </div>
     <div class="row aboutCards">
