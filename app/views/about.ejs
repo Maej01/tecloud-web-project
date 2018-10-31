@@ -9,7 +9,7 @@
 
     <div class="container">
         <!-- <img id="about-logo" src="images/TeCloud-Logo-Transparent.png" alt=""> -->
-        <h5 class="about">Company Profile</h5>
+        <h5 class="about"><b>Company Profile</b></h5>
         <% aboutDt.forEach(function(item){ %>
             <p><%= item.company_profile %></p>
         <% }); %>
@@ -67,25 +67,39 @@
             </div>
         </div> <!-- end of about cards -->
         <div class="container">
-            <h5 class="about">Background of the Software Team</h5>
-            <!-- loading the background data -->
-            <% aboutDt.forEach(function(item){ %>
-                <p><%= item.background_of_softTeam %></p>
-            <% }); %>
+            <div class="row">
+                <div class="col m2 l4 bg-of-soft-team hide-on-small-only">
+                    <img src="/images/stf4.png" alt="soft-team-pic">
+                </div>
+                <div class="col s12 m8 l8 push-m3 push-l1">
+                    <h5 class="about"><b>Background of the Software Team</b></h5>
+                    <!-- loading the background data -->
+                    <% aboutDt.forEach(function(item){ %>
+                        <p><%= item.background_of_softTeam %></p>
+                    <% }); %>
+                </div>
+            </div>
         </div> <!-- end of background of the software team-->
         <div class="container">
-            <h5 class="about">Current Status</h5>
+            <h5 class="about"><b>Status</b></h5>
             <!-- loading the current status data -->
             <% aboutDt.forEach(function(item){ %>
                 <p><%= item.current_status %></p>
             <% }); %>
         </div> <!-- end of current status -->
         <div class="container">
-            <h5 class="about">What we do:</h5>
-            <!-- loading the brief services data -->
-            <% aboutDt.forEach(function(item){ %>
-                <p><%= item.intro_of_services %></p>
-            <% }); %>
+            <div class="row">
+                <div class="col m2 l4 aboutImgs hide-on-small-only">
+                    <img src="/images/what-we-do.png" alt="what-we-do-icon">
+                </div>
+                <div class="col s12 m10 l8 push-m1 push-l1">
+                    <h5 class="about"><b>What we do</b></h5>
+                    <!-- loading the brief services data -->
+                    <% aboutDt.forEach(function(item){ %>
+                        <p><%= item.intro_of_services %></p>
+                    <% }); %>
+                </div>
+            </div>
         </div> <!-- end of brief intro of the sevices-->
 
 

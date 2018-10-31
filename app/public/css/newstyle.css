@@ -26,11 +26,6 @@ nav ul li:hover{
     border-bottom: 3px solid #ffcc00;
 }
 
-/* nav ul li{
-    border-bottom: 3px solid #ffcc00;
-    transition: 0.2s;
-} */
-
 nav img{
     width: 150px;
     height: 100px;
@@ -144,7 +139,7 @@ nav img{
 }
 
 .aboutCards h4{
-    color: #4c4c4c;
+    color: #ffcc00;
     font-size: 20px;
 }
 
@@ -159,15 +154,24 @@ nav img{
 }
 
 .aboutCards i{
-    height: 80px;
-    width: 80px;
-    font-size: 30px;
-    margin-left: 90px;
-    margin-top: -50px;
-    padding: 25px 25px;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    padding: 15px 15px;
     border-radius: 50%;
+    transform: translate(200%, -80%);
     background-color: #7030a8;
     color: #fff;
+}
+
+.container .row .bg-of-soft-team img{
+    width: 300px !important;
+    padding: 50px 0;
+}
+
+.about{
+    color: #7030a8;
+    font: 800;
 }
 
 
@@ -186,6 +190,328 @@ nav img{
 
     .services .card{
         height: 38vh !important;
+    }
+}
+
+/* 320 x 480 screen sizes*/
+@media screen and (width: 320px){
+
+    nav img{
+        margin-left: 5%;
+    }
+    
+    /*big rectangles style*/
+    .rectangles .bigRectangle .card{
+        margin-top: 50px !important;
+    }
+    .rectangles .bigRectangle h2{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .rectangles .bigRectangle h3{
+        font-size: 10px;
+    }
+    /*small rectangles style*/
+    .rectangles .smallRectangles{
+        margin-top: -20px;
+    }
+    .rectangles .smallRectangles .card{
+        height: 80px;
+    }
+    .rectangles .smallRectangles .card .card-icon{
+        height: 80px;
+        width: 80px;
+    }
+    .rectangles .smallRectangles .card .card-icon i{
+        font-size: 30px;
+    }
+    .rectangles .smallRectangles h6{
+        margin-top: -3px;
+    }
+    /*homepage services card style*/
+    .services .card{
+        width: 100% !important;
+        height: 60% !important;
+        margin-bottom: 20px;
+    }
+    .services .card h4{ 
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    /*about page style*/
+    .aboutCards{
+        height: 290%;
+    }
+    .aboutCards .card{
+        height: 300px;
+    }
+    .aboutCards h4{
+        margin: -10px 0 20px 0;
+    }
+
+    /*services page style*/
+    #services_main_tip{
+        font-size: 25px;
+    }
+
+    #services_tip{
+        font-size: 13px;
+    }
+    .services .text-title{
+        font-size: 20px;
+    }
+}
+
+/* 360 x 640 screen sizes (Galaxy S5)*/
+@media screen and (width: 360px){
+
+    nav img{
+        margin-left: 3%;
+    }
+    
+    /*big rectangles style*/
+    .rectangles .bigRectangle .card{
+        margin-top: 50px !important;
+    }
+    .rectangles .bigRectangle h2{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .rectangles .bigRectangle h3{
+        font-size: 10px;
+    }
+    /*small rectangles style*/
+    .rectangles .smallRectangles{
+        margin-top: -20px;
+    }
+    .rectangles .smallRectangles .card{
+        height: 80px;
+    }
+    .rectangles .smallRectangles .card .card-icon{
+        height: 80px;
+        width: 80px;
+    }
+    .rectangles .smallRectangles .card .card-icon i{
+        font-size: 30px;
+    }
+    .rectangles .smallRectangles h6{
+        margin-top: -3px;
+    }
+    /*homepage services card style*/
+    .services .card{
+        width: 100% !important;
+        height: 40% !important;
+        margin-bottom: 20px;
+    }
+    .services .card h4{ 
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    /*about page style*/
+    .aboutCards{
+        height: 185%;
+        margin-top: 50px;
+    }
+    .aboutCards i{
+        transform: translate(245%, -80%);
+    }
+    .aboutCards .card{
+        height: 250px;
+    }
+    .aboutCards h4{
+        margin: -10px 0 20px 0;
+    }
+
+    /*services page style*/
+    #services_main_tip{
+        font-size: 25px;
+    }
+
+    #services_tip{
+        font-size: 13px;
+    }
+    .services .text-title{
+        font-size: 20px;
+    }
+}
+
+/* 360 x 740 screen sizes (Galaxy S9, 9+)*/
+@media screen and (width: 360px){
+
+    /*homepage services card style*/
+    .services .card{
+        height: 35% !important;
+        margin-bottom: 20px;
+    }
+
+    /*about page style*/
+    .aboutCards{
+        height: 160%;
+        margin-top: 50px;
+    }
+
+}
+
+/* 414 x 736 screen sizes (Iphone 6,7,8 plus)*/
+@media screen and (width: 414px){
+
+    nav img{
+        margin-left: 8%;
+    }
+    
+    /*big rectangles style*/
+    .rectangles .bigRectangle .card{
+        margin-top: 50px !important;
+    }
+    .rectangles .bigRectangle h2{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .rectangles .bigRectangle h3{
+        font-size: 10px;
+    }
+    /*small rectangles style*/
+    .rectangles .smallRectangles{
+        margin-top: -20px;
+    }
+    .rectangles .smallRectangles .card{
+        height: 80px;
+    }
+    .rectangles .smallRectangles .card .card-icon{
+        height: 80px;
+        width: 80px;
+    }
+    .rectangles .smallRectangles .card .card-icon i{
+        font-size: 30px;
+    }
+    .rectangles .smallRectangles h6{
+        margin-top: -3px;
+    }
+    /*homepage services card style*/
+    .services .card{
+        width: 100% !important;
+        height: 35% !important;
+        margin-bottom: 20px;
+    }
+    .services .card h4{ 
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    /*about page style*/
+    .aboutCards{
+        height: 160%;
+        margin-top: 50px;
+    }
+    .aboutCards i{
+        transform: translate(280%, -80%);
+    }
+    .aboutCards .card{
+        height: 250px;
+    }
+    .aboutCards h4{
+        margin: -10px 0 20px 0;
+    }
+
+    /*services page style*/
+    #services_main_tip{
+        font-size: 25px;
+    }
+
+    #services_tip{
+        font-size: 13px;
+    }
+    .services .text-title{
+        font-size: 20px;
+    }
+}
+
+/* 768 x 1024 screen sizes (Ipad)*/
+@media screen and (width: 768px){
+
+    nav img{
+        margin-left: 8%;
+    }
+    
+    /*big rectangles style*/
+    .rectangles .bigRectangle .card{
+        margin-top: 50px !important;
+    }
+    .rectangles .bigRectangle h2{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .rectangles .bigRectangle h3{
+        font-size: 10px;
+    }
+    /*small rectangles style*/
+    .rectangles .smallRectangles{
+        margin-top: -20px;
+    }
+    .rectangles .smallRectangles .card{
+        width: 300px;
+        height: 80px;
+        transform: translateX(55%)
+    }
+    .rectangles .smallRectangles .card .card-icon{
+        height: 80px;
+        width: 80px;
+    }
+    .rectangles .smallRectangles .card .card-icon i{
+        font-size: 30px;
+    }
+    .rectangles .smallRectangles h6{
+        margin-top: -3px;
+    }
+    /*homepage services card style*/
+    .services .card{
+        width: 100% !important;
+        height: 25% !important;
+        margin-bottom: 20px;
+    }
+    .services .card h4{ 
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    /*about page style*/
+    .aboutCards{
+        height: 115%;
+        margin-top: 50px;
+    }
+    .aboutCards i{
+        transform: translate(650%, -80%);
+    }
+    .aboutCards .card{
+        height: 250px;
+    }
+    .aboutCards h4{
+        margin: -10px 0 20px 0;
+    }
+
+    .aboutImgs img{
+        width: 150px;
+        margin-top: 40px;
+    }
+
+    .bg-of-soft-team img{
+        margin-left: -40px;
+        margin-top: 30px;
+        width: 100px;
+    }
+
+    /*services page style*/
+    #services_main_tip{
+        font-size: 25px;
+    }
+
+    #services_tip{
+        font-size: 13px;
+    }
+    .services .text-title{
+        font-size: 20px;
     }
 }
 
