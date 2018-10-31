@@ -7,11 +7,11 @@
     <!-- header template-->
     <% include partials/template/header.ejs %>
 
-    <div class="container">
-        <!-- <img id="about-logo" src="images/TeCloud-Logo-Transparent.png" alt=""> -->
+    <div class="container comp_profile_text">
         <h5 class="about"><b>Company Profile</b></h5>
         <% aboutDt.forEach(function(item){ %>
             <p><%= item.company_profile %></p>
+            <p><%= item.more_profile %></p>
         <% }); %>
     </div>
     <div class="row aboutCards">

@@ -126,6 +126,11 @@ nav img{
     height: 380px;
 }
 
+.comp_profile_text{
+    margin-top: 150px !important;
+    margin-bottom: 150px !important;
+}
+
 .aboutCards h2{
     color: #4c4c4c;
     font-size: 20px;
