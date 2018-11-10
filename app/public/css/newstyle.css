@@ -109,6 +109,12 @@ nav img{
     color: #d4d4d4 !important;
 }
 
+#services {
+    background-image: url(../images/hdbg3.png);
+    height: 100%;
+    width: 100%;
+}
+
 .services .btn-small {
     background-color: #7030a8 !important;
     box-shadow: 0px 15px 10px rgb(184, 180, 180);
@@ -175,7 +181,49 @@ nav img{
     font: 800;
 }
 
+/* contact style */
+#contact {
+    background-image: url(../images/hdbg3.png);
+    height: 100%;
+    width: 100%;
+}
 
+.contact-page-container{
+    margin-top: 5%;
+    margin-bottom: 10% !important;
+}
+
+/* .contact-page-container .card{
+    background-color: #000;
+    opacity: 0.9;
+} */
+
+.contact-page-container h5{
+    color: #7030a8;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact-page-container p{
+    color: #706f6f;
+}
+
+.contact-page-container .btn-small {
+    width: 150px !important;
+    margin-left: 150px;
+    background-color: #7030a8 !important;
+    box-shadow: 0px 15px 10px rgb(184, 180, 180);
+    transition: 1s;
+}
+
+
+
+
+
+/* rgb(158, 158, 158); lighter gray */ 
+
+
+/* 1280px screen sizes */
 @media screen and (min-width: 1280px){
     .comp_profile_text{
         margin-top: 150px !important;
@@ -195,7 +243,7 @@ nav img{
     }
 }
 
-/* 320 x 480 screen sizes*/
+/* 320 x 480 screen sizes */
 @media screen and (width: 320px){
 
     nav img{

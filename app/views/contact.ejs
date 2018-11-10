@@ -11,15 +11,11 @@ mixpanel.init("4bff9ba3ed609bcca47d83c7e47151d7");</script> end Mixpanel -->
     <% include partials/template/header.ejs %> <!-- including the header template -->
     <!-- farmers section-->
     <div class="container">
-        <div class="row">
-            <div class="col s12 l6">
-                <h5>Location Map</h5>
-                <canvas>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.2210386058964!2d-13.241459333954918!3d8.47787554872362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf04c3a0f16b216d%3A0x9b98f9bf01a8b1b4!2sCampbell+St%2C+Freetown!5e0!3m2!1sen!2ssl!4v1540233165681" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </canvas>
-            </div>
-            <div class="col s12 l6">
-                <h5>Please fill the form</h5>
+        <div class="row contact-page-container">
+            <div class="card col s12 l6 push-l3">
+                <!-- <div class="card"> -->
+                <h5 class="center">Please fill the form</h5>
+                <p class="center">Got a question? We would love to hear from you. Send us a message and we&apos;ll respond as soon as possible.</p>
                 <form method="POST" action="/contact">
                     <div class="input-field">
                         <label for="name">Name</label>
@@ -34,24 +30,27 @@ mixpanel.init("4bff9ba3ed609bcca47d83c7e47151d7");</script> end Mixpanel -->
                         <input type="text" name="phone_number" id="phone_number" required>
                     </div>
                     <div class="input-field">
+                        <!-- <label id="msg-subject" for="msg-subject"></label>  -->
                         <select name="subject" required>
-                            <option  disabled selected>Message Subjects</option>
+                            <option  disabled selected>Message Subject</option>
                             <option  name="project" id="project">I have a Project</option>
                             <option  name="questions" id="questions">I have a Question</option>
                             <option  name="bug" id="bug">I want to report a Bug</option>
                             <option  name="other" id="other">Other</option>
                         </select>
-                        <label for="msg-subject">Please select a subject</label>
+                        <label id="msg-subject" for="msg-subject"></label> 
                     </div>
                     <div class="input-field">
                         <label for="message">Compose Message</label>
                         <textarea id="message" name="message" class="materialize-textarea validate" data-length="800" required></textarea>
                     </div>
-                    <div class="input-field" id="btn-save">
+                    <input type="button" class="btn-small center white-text" value="Send">
+                    <!-- <div class="input-field" id="btn-save">
                         <button class="btn-small blue" type="submit">Send <i class="material-icons right">send</i></button>
-                    </div>
+                    </div> -->
                 </form>
             </div>
+            <!-- </div> -->
         </div>
     </div><!-- end of container -->
 
