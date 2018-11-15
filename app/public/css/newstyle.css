@@ -127,6 +127,10 @@ nav img{
 }
 
 /* ABOUT SECTION STYLES */
+#about{
+    background-color: #f3f0f0;
+}
+
 .aboutCards{
     background-color: #00B0F0;
     height: 380px;
@@ -181,6 +185,29 @@ nav img{
     font: 800;
 }
 
+/* our team style */
+#team{}
+
+#team #member-info-img{
+    height: 200px;
+    width: 200px;
+    margin-left: 45px;
+    margin-bottom: 7%;
+
+}
+
+#team h3{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#team .social-link{
+    margin: 0 0 0 75px;
+    padding-bottom: 30px;
+
+}
+
+
 /* contact style */
 #contact {
     background-image: url(../images/hdbg3.png);
@@ -216,8 +243,23 @@ nav img{
     transition: 1s;
 }
 
+/* FOOTER STYLE */
+.page-footer{
+    height: 300px;
+    background-color: #00B0F0 !important;
+}
 
+.page-footer h5{
+    font-size: 18px;
+}
 
+.page-footer p, li{
+    font-size: 13px !important;
+}
+
+#footer-copyright{
+    margin-top: 80px;
+}
 
 
 /* rgb(158, 158, 158); lighter gray */ 
@@ -311,6 +353,30 @@ nav img{
     .services .text-title{
         font-size: 20px;
     }
+
+    /* team style */
+    #team #member-info-img{
+        margin-left: 30px;
+    }
+
+    #team .social-link{
+        margin: 0 0 0 60px;
+    
+    }
+
+    #team h5{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    /* footer style */
+    .page-footer{
+        height: 450px;
+    }
+
+    #footer-copyright{
+        margin-top: -18px;
+    }
 }
 
 /* 360 x 640 screen sizes (Galaxy S5)*/
@@ -385,6 +451,31 @@ nav img{
     .services .text-title{
         font-size: 20px;
     }
+
+    /* team style */
+    #team #member-info-img{
+        margin-left: 50px;
+    }
+
+    #team h5{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    #team .social-link{
+        margin: 0 0 0 80px;
+    
+    }
+
+    /* footer style */
+    .page-footer{
+        height: 450px;
+    }
+
+    #footer-copyright{
+        margin-top: -5px;
+    }
+
 }
 
 /* 360 x 740 screen sizes (Galaxy S9, 9+)*/
@@ -400,6 +491,111 @@ nav img{
     .aboutCards{
         height: 160%;
         margin-top: 50px;
+    }
+
+}
+
+/* 375 x 667 screen sizes (Iphone 6/7/8 Plus)*/
+@media screen and (width: 375px){
+
+    nav img{
+        margin-left: 5%;
+    }
+
+    /*big rectangles style*/
+    .rectangles .bigRectangle .card{
+        margin-top: 50px !important;
+    }
+    .rectangles .bigRectangle h2{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .rectangles .bigRectangle h3{
+        font-size: 10px;
+    }
+    /*small rectangles style*/
+    .rectangles .smallRectangles{
+        margin-top: -20px;
+    }
+    .rectangles .smallRectangles .card{
+        height: 80px;
+    }
+    .rectangles .smallRectangles .card .card-icon{
+        height: 80px;
+        width: 80px;
+    }
+    .rectangles .smallRectangles .card .card-icon i{
+        font-size: 30px;
+    }
+    .rectangles .smallRectangles h6{
+        margin-top: -3px;
+    }
+    /*homepage services card style*/
+    .services .card{
+        width: 100% !important;
+        height: 35% !important;
+        margin-bottom: 20px;
+    }
+    .services .card h4{ 
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    /*about page style*/
+    .aboutCards{
+        height: 160%;
+        margin-top: 50px;
+    }
+    .aboutCards i{
+        transform: translate(250%, -80%);
+    }
+    .aboutCards .card{
+        height: 250px;
+    }
+    .aboutCards h4{
+        margin: -10px 0 20px 0;
+    }
+
+    /*services page style*/
+    #services_main_tip{
+        font-size: 25px;
+    }
+
+    #services_tip{
+        font-size: 13px;
+    }
+    .services .text-title{
+        font-size: 20px;
+    }
+
+    /*homepage services card style*/
+    .services .card{
+        height: 40% !important;
+        margin-bottom: 20px;
+    }
+
+    /* team style */
+    #team #member-info-img{
+        margin-left: 60px;
+    }
+
+    #team h5{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    #team .social-link{
+        margin: 0 0 0 80px;
+    
+    }
+
+    /* footer style */
+    .page-footer{
+        height: 410px;
+    }
+
+    #footer-copyright{
+        margin-top: -5px;
     }
 
 }
@@ -475,6 +671,21 @@ nav img{
     }
     .services .text-title{
         font-size: 20px;
+    }
+
+    /* team style */
+    #team #member-info-img{
+        margin-left: 75px;
+    }
+
+    #team .social-link{
+        margin: 0 0 0 100px;
+    
+    }
+
+    /* footer style */
+    .page-footer{
+        height: 530px;
     }
 }
 
@@ -562,6 +773,23 @@ nav img{
     }
     .services .text-title{
         font-size: 20px;
+    }
+
+    /* team style */
+    #team #member-info-img{
+        height: 200px;
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    #team .social-link{
+        margin: 0 0 0 80px;
+    
+    }
+
+    /* footer style */
+    .page-footer{
+        height: 350px;
     }
 }
 

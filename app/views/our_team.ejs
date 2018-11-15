@@ -6,8 +6,74 @@
     <!-- header template-->
     <% include partials/template/header.ejs %>
 
-    <!-- invest section-->
-    <% include partials/content/invest_cont.ejs %>
+    <!-- main about section-->
+    <div class="row ">
+        <h5 class="center">Here are our team members</h5>
+        <p class="center">Displaying from top to bottom</p>
+
+        <div class="container">
+            <div class="row">
+                <h6 class="center">Senior Management</h6>
+                    <!-- looping through the team data -->
+                    <% ourTeamData.forEach(function(member){ %>
+                        <div class="col s12 m6 l4">
+                            <div class="card">
+                                <a  href="/our_team/<%= member.shortname %>">
+                                    <img id="member-info-img" class="center" src="/images/teamImages/<%= member.shortname %>.jpg" alt="member">
+                                </a>
+                                <p class="center"><%= member.qualification %></p>
+                                <p class="center"><%= member.role %></p>
+                                <p class="center"><%= member.email %></p>
+                                <!-- <img src="../images/teamImages/Jesse.jpg" alt=""> -->
+                                <div class="social-link">
+                                    <a href="#" class="btn-floating btn-small indigo darken-1" id="social_media_icons">
+                                        <i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="btn-floating btn-small blue lighten-1"  id="social_media_icons">
+                                        <i class="fab fa-twitter"></i></a> 
+                                    <a href="#" class="btn-floating btn-small blue darken-3" id="social_media_icons">
+                                        <i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="btn-floating btn-small  red darken-4"  id="social_media_icons">
+                                        <i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <% if (pageID != 'team') { %>
+                            <div class="row">
+                                <div class="col l8">
+                                    <a href="/our_team/<%= item.shortname %>">
+                                        <img id="member-info-img" src="/images/teamImages/<%= item.shortname %>.jpg" alt="Member">
+                                    </a>
+                                </div>
+                                <div class="col l4 member-desc">
+                                    <p>Name : <%= member.name %></p>
+                                    <p>Qualification: <%= member.qualification %></p>
+                                    <p>Position: <%= member.role %></p>
+                                </div>
+                            </div> 
+                            
+                            <%- member.description %>  <!-- displaying the description in the farmer detail -->
+                           <i class="material-icons left prefix">chevron_left</i><a href="/our_team">go back</a>
+                        <% } %> 
+                    <% }); %> <!-- end of for loop -->
+            </div> <!-- end of row -->
+        </div> <!-- end of conatiner -->
+    </div> <!-- end of main row -->
+
+
+    <!-- Modal Trigger -->
+    <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+    <!-- Modal Structure -->
+    <!-- <div id="modal1" class="modal">
+        <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div> -->
 
     <!-- including the footer template -->
     <% include partials/template/footer.ejs %>
