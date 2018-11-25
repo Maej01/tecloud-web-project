@@ -11,13 +11,14 @@
         <h5 class="center">Here are our team members</h5>
         <p class="center">Displaying from top to bottom</p>
 
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="row">
-                <h6 class="center">Senior Management</h6>
+                <h6 class="center">Senior Management and Developers</h6>
                     <!-- looping through the team data -->
                     <% ourTeamData.forEach(function(member){ %>
-                        <div class="col s12 m6 l4">
-                            <div class="card">
+                        <div class="col s12 l3">
+                            <div class="row">
+                                <h3 class="center"><%= member.name %></h3>
                                 <a  href="/our_team/<%= member.shortname %>">
                                     <img id="member-info-img" class="center" src="/images/teamImages/<%= member.shortname %>.jpg" alt="member">
                                 </a>
@@ -38,6 +39,7 @@
                             </div>
                         </div>
 
+
                         <% if (pageID != 'team') { %>
                             <div class="row">
                                 <div class="col l8">
@@ -57,7 +59,7 @@
                         <% } %> 
                     <% }); %> <!-- end of for loop -->
             </div> <!-- end of row -->
-        </div> <!-- end of conatiner -->
+        <!-- </div> end of conatiner -->
     </div> <!-- end of main row -->
 
 

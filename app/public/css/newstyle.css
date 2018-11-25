@@ -186,19 +186,33 @@ nav img{
 }
 
 /* our team style */
-#team{}
+#team{
+    background-color: #f8f7f7dc;
+}
 
 #team #member-info-img{
     height: 200px;
     width: 200px;
-    margin-left: 45px;
+    margin-left: 65px;
     margin-bottom: 7%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
 
+#team h5{
+    padding-top: 50px;
+    color: #999595;
+}
+
+#team p{
+    color: #999595;
 }
 
 #team h3{
     font-size: 20px;
     padding-top: 20px;
+    color: #7030a8;
+    font-weight: 500;
 }
 
 #team .social-link{
@@ -792,4 +806,6 @@ nav img{
         height: 350px;
     }
 }
+
+/* NOTE 3 */
 
