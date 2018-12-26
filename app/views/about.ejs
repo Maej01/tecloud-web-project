@@ -7,17 +7,85 @@
     <!-- header template-->
     <% include partials/template/header.ejs %>
 
-    <div class="container comp_profile_text">
+    <div class="row about-header-card">
+        <div class="col s12 m6 push-m3">
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="center">TeCloud Platform</h2>
+                    <h3 class="center">Welcome to the Home of Innovation</h3>
+                </div> 
+            </div> 
+        </div>
+    </div>
+    
+    <div class="container about-container">
+        <div class="col s8 m12">
+            <!-- who we're -->
+            <div class="card">
+                <div class="row">
+                    <div class="card-title col m4">
+                        <h6 class="center">Who we are</h6>
+                    </div>
+                    <div class="card-content col m8">
+                        <p>
+                            TeCloud Platform is a technology and innovation-driven company in 
+                            Sierra Leone with a mindset that empowers our customers to grow 
+                            their businesses through the design and development of 
+                            fit-for-purpose ICT, software and multimedia  products, 
+                            services and solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- What we do -->
+            <div class="card">
+                <div class="row">
+                    <div class="card-title col m4">
+                        <h6 class="center">What we do</h6>
+                    </div>
+                    <div class="card-content col m8">
+                        <p>
+                            We develop and sell:
+                            <ul>
+                                <li>ICT services</li>
+                                <li>Graphics and multimedia products and services</li>
+                                <li>Software  products and services</li>
+                                <li>A free-to-join incubation and innovation training hub</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Why you should contact us? -->
+            <div class="card">
+                <div class="row">
+                    <div class="card-title col m4">
+                        <h6 class="center">Why you should contact us?</h6>
+                    </div>
+                    <div class="card-content col m8">
+                        <ul>
+                            <li>We offer high quality products and service at affordable prices</li>
+                            <li>We team-up with you to design and develop products and services that meet your business needs</li>
+                            <li>We create a digital identity for your business at no cost</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end of entire column-->
+    </div><!-- end of about container -->
+
+
+    <!-- <div class="container comp_profile_text">
         <h5 class="about"><b>Company Profile</b></h5>
         <% aboutDt.forEach(function(item){ %>
             <p><%= item.company_profile %></p>
             <p class="hide-on-small-only"><%= item.more_profile %></p>
         <% }); %>
-    </div>
+    </div> -->
     <div class="row aboutCards">
             <!-- <h2 class="center">Know our interest</h2>
             <h3 class="center">we are focused in pushing towards our goals</h3> -->
-            <div class="col s12 l3 wow flipInY" data-wow-delay="0.8s">
+            <div class="col s12 m3">
                 <div class="card">
                     <div class="card-content">
                         <i class="fas fa-bullseye"></i>
@@ -29,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 l3 wow flipInY" data-wow-delay="1.2s">
+            <div class="col s12 m3">
                 <div class="card">
                     <div class="card-content">
                         <i class="fas fa-eye"></i>
@@ -41,30 +109,111 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 l3 wow flipInY" data-wow-delay="1.6s">
+            <div class="col s12 m3">
                 <div class="card">
                     <div class="card-content">
-                        <i class="fas fa-file-alt"></i>
-                        <h4 class="center"><b>Values</b></h4>
-                        <!-- loasding the values data -->
-                        <% aboutDt.forEach(function(item){ %>
-                            <p><%= item.values %></p>
-                        <% }); %>
+                        <i class="fas fa-eye"></i>
+                        <h4 class="center"><b>Core Values</b></h4>
+                        <ul>
+                            <li><a class="modal-trigger" href="#value1">Creativity and Innovation</a></li>
+                            <li><a class="modal-trigger" href="#value2">Quality services and solutions</a></li>
+                            <li><a class="modal-trigger" href="#value3">Customer Satisfaction</a></li>
+                            <li><a class="modal-trigger" href="#value4">Team Building</a></li>
+                            <li><a class="modal-trigger" href="#value5">Empowered Employee</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- modal structure of the core values -->
+                <div id="value1" class="modal">
+                    <div class="modal-content">
+                        <h4>Creativity and Innovation</h4>
+                        <p>
+                            We design and develop smart solutions that focus on ease of use 
+                            and are adaptable to emerging technologies. We do this by promoting 
+                            and maintaining a culture that fosters creativity and innovation
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+                    </div>
+                </div>
+                <div id="value2" class="modal">
+                    <div class="modal-content">
+                        <h4>Quality services and solutions</h4>
+                        <p>
+                            To improve and maintain our reputation we are committed to designing, 
+                            developing and improving the quality of our products and services
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+                    </div>
+                </div>
+                <div id="value3" class="modal">
+                    <div class="modal-content">
+                        <h4>Customer Satisfaction</h4>
+                        <p>
+                            We intently listen to the needs and concerns of our customers
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+                    </div>
+                </div>
+                <div id="value4" class="modal">
+                    <div class="modal-content">
+                        <h4>Team Building</h4>
+                        <p>
+                            We build and nurture a team of experts, 
+                            creative thinkers and innovators through continuous learning and empowerment
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+                    </div>
+                </div>
+                <div id="value5" class="modal">
+                    <div class="modal-content">
+                        <h4>Empowered Employee</h4>
+                        <p>
+                            We create and promote an exciting and team-driven working environment
+                            where employees feel proud about the work they do. We motivate and 
+                            treat our employees with great value and respect.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
                     </div>
                 </div>
             </div>
-            <div class="col s12 l3 wow flipInY" data-wow-delay="2s">
+             <div class="col s12 m3">
+                <div class="card">
+                    <div class="card-content">
+                        <i class="fas fa-file-alt"></i>
+                        <h4 class="center"><b>Our Team</b></h4> 
+                        <p>We have a dynamic team comprising of highly experienced:</p> 
+                        <ul> 
+                            <li>ICT professionals with over 10 years experience</li>
+                            <li>Graphics designers and Multimedia professionals</li>
+                            <li>Software project managers and developers with over 5 years experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="col s12 m3 wow flipInY" data-wow-delay="2s">
                 <div class="card">
                     <div class="card-content">
                         <i class="material-icons white-text">event_note</i>
-                        <h4 class="center"><b>Objective</b></h4>
+                        <h4 class="center"><b>Objective</b></h4> -->
                         <!-- loading the objective data -->
-                        <% aboutDt.forEach(function(item){ %>
+                        <!-- <% aboutDt.forEach(function(item){ %>
                             <p><%= item.objective %></p>
                         <% }); %>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div> <!-- end of about cards -->
         <div class="container">
             <div class="row">
@@ -80,27 +229,27 @@
                 </div>
             </div>
         </div> <!-- end of background of the software team-->
-        <div class="container">
+        <!-- <div class="container"> 
             <h5 class="about"><b>Status</b></h5>
-            <!-- loading the current status data -->
+            loading the current status data 
             <% aboutDt.forEach(function(item){ %>
                 <p><%= item.current_status %></p>
             <% }); %>
-        </div> <!-- end of current status -->
-        <div class="container">
+        </div>  end of current status -->
+        <!--<div class="container">
             <div class="row">
                 <div class="col m2 l4 aboutImgs hide-on-small-only">
                     <img src="/images/what-we-do.png" alt="what-we-do-icon">
                 </div>
                 <div class="col s12 m10 l8 push-m1 push-l1">
                     <h5 class="about"><b>What we do</b></h5>
-                    <!-- loading the brief services data -->
+                     loading the brief services data 
                     <% aboutDt.forEach(function(item){ %>
                         <p><%= item.intro_of_services %></p>
                     <% }); %>
                 </div>
             </div>
-        </div> <!-- end of brief intro of the sevices-->
+        </div>  end of brief intro of the sevices-->
 
 
       <!-- including the js scripts template -->

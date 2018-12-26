@@ -46,11 +46,11 @@ nav img{
 
 /* HEADER REXTANGLES SECTION BOXES */
 .rectangles{
-    margin-top: -560px;
+    margin-top: -600px;
 }
 
 .rectangles .bigRectangle .card{
-    margin-top: 140px !important;
+    margin-top: 50px !important;
     background-color: rgba(0, 0, 0, 0) !important;
 }
 
@@ -64,30 +64,47 @@ nav img{
     margin-top: -20px;
 }
 
-.rectangles .smallRectangles{
-    margin-top: 60px;
+.rectangles .bigRectangle h4{
+    font-size: 20px;
+    padding-top: 20px;
 }
 
-.rectangles .smallRectangles h6{
+.header-cards{
+    margin-left: 40px; 
+}
+
+.header-cards .card-title{
+    font-size: 20px !important;
+    padding: 20px 10px 0 10px;
+}
+
+.header-cards p, li{
+    font-family: 'Gill Sans';
     font-size: 15px;
 }
 
-.rectangles .smallRectangles .card .card-icon{
-    height: 99.2px;
-    background-color: #00B0F0;
+.header-cards ul {
+    list-style: none;
 }
-.rectangles .smallRectangles .card .card-icon i{
-    font-size: 50px;
-    margin-top: 25px;   
+  
+.header-cards ul li:before {
+    content: '✓';
 }
+
+.header-cards .card{
+    height: 200px;
+    /* background-color: #cccccc;
+    opacity: 0.1; */
+}
+
 
 /*SERVICES SECTION STYLE*/
  .services_bar{
     height: 50px;
     background-color: #000; 
     opacity: 0.9;
-    margin-top: -22px;
-    margin-bottom: 5%;
+    margin-top: 190px;
+    margin-bottom: 10%;
     box-shadow: 0px 15px 15px gray;   
 } 
 
@@ -131,11 +148,27 @@ nav img{
     background-color: #f3f0f0;
 }
 
+.about-header-card{
+    padding-top: 100px;
+}
+.about-header-card{
+    padding-top: 100px;
+}
+
+.about-header-card h2{
+    font-size: 45px;
+    color:  #00B0F0;
+}
+
+.about-header-card h3{
+    font-size: 20px;
+    margin-top: -20px;
+}
+
 .aboutCards{
     background-color: #00B0F0;
     height: 380px;
 }
-
 
 .aboutCards h2{
     color: #4c4c4c;
@@ -183,6 +216,50 @@ nav img{
 .about{
     color: #7030a8;
     font: 800;
+}
+
+.about-container{
+    padding: 20px 0 100px 0;
+}
+
+.about-container .card{
+    background-color: rgb(201, 171, 230); 
+}
+
+.about-container .card h6{
+    font-size: 25px;
+    padding: 50px 0;
+    color: #f3f0f0;
+}
+
+.about-container ul {
+    list-style: none;
+}
+
+.about-container ul li{
+    font-size: 18px;
+    font-family: 'Gill Sans' !important;
+}
+  
+.about-container ul li:before {
+    content: '✓';
+    padding: 0 15px;
+}
+
+.about-container .card .card-title{
+    background-color: #7030a8;
+    height: 150px;
+    width: 200px;
+}
+
+.about-container .card .card-content{
+    background-color: #cccccc;
+    height: 150px;
+    width: 200px;
+}
+
+.about-container .modal{
+    margin-top: 500px !important; 
 }
 
 /* our team style */
@@ -291,7 +368,7 @@ nav img{
     }
 
     .services_bar{
-        margin-top: -23px;   
+        margin-top: 139px;   
     } 
 
     .services .card{
@@ -317,23 +394,7 @@ nav img{
     .rectangles .bigRectangle h3{
         font-size: 10px;
     }
-    /*small rectangles style*/
-    .rectangles .smallRectangles{
-        margin-top: -20px;
-    }
-    .rectangles .smallRectangles .card{
-        height: 80px;
-    }
-    .rectangles .smallRectangles .card .card-icon{
-        height: 80px;
-        width: 80px;
-    }
-    .rectangles .smallRectangles .card .card-icon i{
-        font-size: 30px;
-    }
-    .rectangles .smallRectangles h6{
-        margin-top: -3px;
-    }
+    
     /*homepage services card style*/
     .services .card{
         width: 100% !important;

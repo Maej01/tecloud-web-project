@@ -16,6 +16,7 @@
         $('.slider').slider({indicators : false, interval: 5000});
         $('.sidenav').sidenav();
         $('select').formSelect();
+        $('.modal').modal();
 
         //radio buttons variables
         var subject_input = $('#msg-input');
@@ -30,25 +31,6 @@
         var rbtn_bug = $('#rbtn_bug');
         var rbtn_other = $('#rbtn_other');
 
-        //checking for click event
-        // if(rtbn_proj.click()){
-        //     if(msg_body.prepend()){
-        //         msg_body.append('I have a project');
-        //     }
-        // }
-        // else if(rbtn_question.click()){
-        //     msg_body.append('I have a question');
-        // }
-        // else if(rbtn_suggestion.click()){
-        //     msg_body.append('I have a suggestion');
-        // }
-        // else if(rbtn_bug.click()){
-        //     msg_body.append('I want to report a bug');
-        // }
-        // else if(rbtn_other.click()){
-        //     subject_input.show(); //displaying the subject input
-        // }
-        
 
 
         mixpanel.track("Video play");
