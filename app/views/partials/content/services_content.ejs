@@ -1,104 +1,308 @@
 <!-- services container -->
 <!-- <div class="container">  -->
         <div class="row services" id="main-services">
+           
+           <div class="col s12 l12">
+                <ul class="tabs">
+                    <li class="tab col s2">
+                        <a href="#website" class="indigo-text text-darken-4">Website</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#apps" class="indigo-text text-darken-4">Apps</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#ICT" class="indigo-text text-darken-4">ICT</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#dgmkt" class="indigo-text text-darken-4">Digital Marketing</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#multi" class="indigo-text text-darken-4">Multimedia</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#innc" class="indigo-text text-darken-4">Inncubation Hub</a>
+                    </li>
+                    <li class="tab col s2">
+                        <a href="#inno" class="indigo-text text-darken-4">Innovation Hub</a>
+                    </li>
+                </ul>
+
             <!-- web development -->
-            <div class="row">
-                <div class="col s12  l6 wow slideInLeft push-l1">
+            <div class="services1" id="website">
+                <div class="col s12 m6 wow slideInLeft big-card" >
                     <div class="card">
                         <div class="card-content">
-                            <h4><%= services.Website.title %><i class="material-icons blue-text right">web</i> </h4>
+                            <h4><b><%= services.Website.title %><i class="material-icons blue-text right">web</i></b></h4>
+                            <h5><b><%= services.Website.sub_title %></b></h5>
                             <p><%= services.Website.description %></p>
                             <hr>
                             <input type="button" class="btn-small orange right" value="Read More">
                         </div>
                     </div>
                 </div>
-                <div class="col s12 l6 wow fadeIn right right-services-content-text" data-wow-delay="0.5s">
-                    <div class="container">
-                        <h4><%= services.Website.title %></h4>
-                        <p><%= services.Website.description %></p>
+                <div class="col s12 m6 wow fadeIn right small-cards" data-wow-delay="0.5s">
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <div class="card ">
+                                <h6><b><%= services.Website.right_web_heading1 %></b></h6>
+                                <p><%= services.Website.right_web_content1 %></p>
+                            </div>
+                        </div>
+                        <div class="col s6 m3 push-m3">
+                            <div class="card">
+                                <h6 ><b><%= services.Website.right_web_heading2 %></b></h6>
+                                <p><%= services.Website.right_web_content2 %></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <div class="card">
+                                <h6 ><b><%= services.Website.right_web_heading3 %></b></h6>
+                                <p><%= services.Website.right_web_content3 %></p>
+                            </div>
+                        </div>
+                        <div class="col s6 m3 push-m3">
+                            <div class="card">
+                                <h6 ><b><%= services.Website.right_web_heading4 %></b></h6>
+                                <p><%= services.Website.right_web_content4 %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <div class="card">
+                                <h6 ><b><%= services.Website.right_web_heading5 %></b></h6>
+                                <p><%= services.Website.right_web_content5 %></p>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
             </div>
             
             <!-- apps development -->
-            <div class="row">
-                <div class="col s12 l6 push-m2  wow slideInRight right">
+            <div class="services2" id="apps">
+                <div class="col s12 m6 wow slideInRight big-card right" >
                     <div class="card">
                         <div class="card-content">
-                            <h4><%= services.AppDev.title %><i class="material-icons blue-text right">phone_iphone</i> </h4>
+                            <h4><b><%= services.AppDev.title %></b><i class="material-icons blue-text right">phone_iphone</i> </h4>
+                            <h5><b><%= services.AppDev.sub_title %></b></h5>
                             <p><%= services.AppDev.description %></p>
                             <hr>
                             <input type="button" class="btn-small orange right" value="Read More">
                         </div>
                     </div>
                 </div>
-                <div class="col s12 l6 wow fadeIn left left-services-content-text" data-wow-delay="0.5s">
-                    <div class="container">
-                        <h4><%= services.AppDev.title %></h4>
-                        <p><%= services.AppDev.description %></p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Games Development -->
-            <div class="row">
-                <div class="col s12 l6 wow slideInLeft push-l1">
-                    <div class="card">
-                        <div class="card-content">
-                            <h4><%= services.GameDev.title %><i class="material-icons blue-text right">games</i> </h4>
-                            <p><%= services.GameDev.description %></p>
-                            <hr>
-                            <input type="button" class="btn-small orange right" value="Read More">
+                <div class="col s12 m6 wow fadeIn small-cards" data-wow-delay="0.5s">
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <div class="card ">
+                                <h6><b><%= services.AppDev.right_app_heading1 %></b></h6>
+                                <p><%= services.AppDev.right_app_content1 %></p>
+                            </div>
                         </div>
-                    </div> 
-                </div>
-                <div class="col s12 l6 wow fadeIn right right-services-content-text" data-wow-delay="0.5s">
-                    <div class="container">
-                        <h4><%= services.GameDev.title %></h4>
-                        <p><%= services.GameDev.description %></p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- company analysis -->
-            <div class="row">
-                <div class="col s12 l6 push-m2  wow slideInRight right">
-                    <div class="card">
-                        <div class="card-content">
-                            <h4><%= services.CompanyAnalysis.title %><i class="material-icons blue-text right">details</i> </h4>
-                            <p><%= services.CompanyAnalysis.description %></p>
-                            <hr>
-                            <input type="button" class="btn-small orange right" value="Read More">
+                        <div class="col s6 m3 push-m3">
+                            <div class="card">
+                                <h6 ><b><%= services.AppDev.right_app_heading2 %></b></h6>
+                                <p><%= services.AppDev.right_app_content2 %></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col s12 l6 wow fadeIn left left-services-content-text" data-wow-delay="0.5s">
-                    <div class="container">
-                        <h4><%= services.CompanyAnalysis.title %></h4>
-                        <p><%= services.CompanyAnalysis.description %></p>
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <div class="card">
+                                <h6 ><b><%= services.AppDev.right_app_heading3 %></b></h6>
+                                <p><%= services.AppDev.right_app_content3 %></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Games Development -->
-            <div class="row">
-                <div class="col s12 l6 wow slideInLeft push-l1">
+            <!-- ICT -->
+            <div class="services3" id="ICT">
+                <div class="col s12 m6 services3 wow slideInLeft big-card" >
                     <div class="card">
                         <div class="card-content">
-                                <h4><%= services.GameDev.title %><i class="material-icons blue-text right">games</i> </h4>
-                                <p><%= services.GameDev.description %></p>
+                            <h4><b><%= services.ICT.title %><i class="material-icons blue-text right">web</i></b></h4>
+                            <h5><b><%= services.ICT.sub_title %></b></h5>
+                            <p><%= services.ICT.description %></p>
                             <hr>
                             <input type="button" class="btn-small orange right" value="Read More">
                         </div>
-                    </div> 
+                    </div>
                 </div>
-                <div class="col s12 l6 wow fadeIn right right-services-content-text" data-wow-delay="0.5s">
-                    <div class="container">
-                        <h4><%= services.GameDev.title %></h4>
-                        <p><%= services.GameDev.description %></p>
+                <div class="col s12 m6 wow fadeIn right small-cards" data-wow-delay="0.5s">
+                    <div class="row">
+                        <div class="col s6 m3 no_bullet">
+                            <div class="card">
+                                <h6><b><%= services.ICT.right_ICT_heading1 %></b></h6>
+                                <p><%= services.ICT.right_ICT_content1 %></p>
+                            </div>
+                        </div>
+                            <div class="col s6 m3 push-m3 bullet">
+                            <div class="card">
+                                <h6 ><b><%= services.ICT.right_ICT_heading2 %></b></h6>
+                                <p><%= services.ICT.right_ICT_content2.bullet1 %></p>
+                                <p><%= services.ICT.right_ICT_content2.bullet2 %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6 m3" id="__4bullet">
+                            <div class="card">
+                                <h6 ><b><%= services.ICT.right_ICT_heading3 %></b></h6>
+                                <p><%= services.ICT.right_ICT_content3.bullet3 %></p>
+                                <p><%= services.ICT.right_ICT_content3.bullet4 %></p>
+                                <p><%= services.ICT.right_ICT_content3.bullet5 %></p>
+                                <p><%= services.ICT.right_ICT_content3.bullet6 %></p>
+                            </div>
+                        </div>
+                        <div class="col s6 m3 push-m3 bullet">
+                            <div class="card">
+                                <h6 ><b><%= services.ICT.right_ICT_heading4 %></b></h6>
+                                <p><%= services.ICT.right_ICT_content4.bullet7 %></p>
+                                <p><%= services.ICT.right_ICT_content4.bullet8 %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="services4" id="dgmkt">
+                <div class="col s12 m6 wow slideInRight big-card right">
+                    <div class="card">
+                        <div class="card-content">
+                            <h4><b><%= services.DigitalMkt.title %></b><i class="material-icons blue-text right">phone_iphone</i> </h4>
+                            <h5><b><%= services.DigitalMkt.sub_title %></b></h5>
+                            <p><%= services.DigitalMkt.description %></p>
+                            <hr>
+                            <input type="button" class="btn-small orange right" value="Read More">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 wow fadeIn small-cards" data-wow-delay="0.5s">
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <div class="card ">
+                                <h6><b><%= services.DigitalMkt.right_dm_heading1 %></b></h6>
+                                <p><%= services.DigitalMkt.right_dm_content1 %></p>
+                            </div>
+                        </div>
+                        <div class="col s6 m3 push-m3">
+                            <div class="card">
+                                <h6 ><b><%= services.DigitalMkt.right_dm_heading2 %></b></h6>
+                                <p><%= services.DigitalMkt.right_dm_content2 %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <div class="card">
+                                <h6 ><b><%= services.DigitalMkt.right_dm_heading3 %></b></h6>
+                                <p><%= services.DigitalMkt.right_dm_content3 %></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div><!-- end of row class -->
+
+            <!-- Multimedia -->
+            <div class="services5" id="multi">
+                <div class="col s12 m6 wow slideInLeft big-card">
+                    <div class="card">
+                        <div class="card-content">
+                            <h4><b><%= services.Multimedia.title %><i class="material-icons blue-text right">web</i></b></h4>
+                            <h5><b><%= services.Multimedia.sub_title %></b></h5>
+                            <p><%= services.Multimedia.description %></p>
+                            <hr>
+                            <input type="button" class="btn-small orange right" value="Read More">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 wow fadeIn right small-cards" data-wow-delay="0.5s">
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <div class="card ">
+                                <h6><b><%= services.Multimedia.right_mul_heading1 %></b></h6>
+                                <p><%= services.Multimedia.right_mul_content1 %></p>
+                            </div>
+                        </div>
+                            <div class="col s6 m3 push-m3">
+                            <div class="card">
+                                <h6 ><b><%= services.Multimedia.right_mul_heading2 %></b></h6>
+                                <p><%= services.Multimedia.right_mul_content2 %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <div class="card">
+                                <h6 ><b><%= services.Multimedia.right_mul_heading3 %></b></h6>
+                                <p><%= services.Multimedia.right_mul_content3 %></p>
+                            </div>
+                        </div>
+                        <div class="col s6 m3 push-m3">
+                            <div class="card">
+                                <h6 ><b><%= services.Multimedia.right_mul_heading4 %></b></h6>
+                                <p><%= services.Multimedia.right_mul_content4 %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <div class="card">
+                                <h6 ><b><%= services.Website.right_web_heading5 %></b></h6>
+                                <p><%= services.Website.right_web_content5 %></p>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Incuabtion HUB -->
+            <div class="services6" id="innc">
+                <div class="col s12 m6 wow slideInRight big-card right">
+                    <div class="card">
+                        <div class="card-content">
+                            <h4><b><%= services.Inncubation.title %></b><i class="material-icons blue-text right">phone_iphone</i> </h4>
+                            <h5><b><%= services.Inncubation.sub_title %></b></h5>
+                            <p><%= services.Inncubation.description %></p>
+                            <hr>
+                            <input type="button" class="btn-small orange right" value="Read More">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 wow fadeIn small-cards" data-wow-delay="0.5s">
+                    <div class="row">
+                        <div class="col s6 m3" id="no_bullet">
+                            <div class="card ">
+                                <h6><b><%= services.Inncubation.right_innc_heading1 %></b></h6>
+                                <p><%= services.Inncubation.right_innc_content1 %></p>
+                            </div>
+                        </div>
+                        <div class="col s6 m3 push-m3 " id="innc_list_card">
+                            <div class="card">
+                                <h6 ><b><%= services.Inncubation.right_innc_heading2 %></b></h6>
+                                <p><%= services.Inncubation.right_innc_content2.bullet1 %></p>
+                                <p><%= services.Inncubation.right_innc_content2.bullet2 %></p>
+                                <p><%= services.Inncubation.right_innc_content2.bullet3 %></p>
+                                <p><%= services.Inncubation.right_innc_content2.bullet4 %></p>
+                                <p><%= services.Inncubation.right_innc_content2.bullet5 %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+           
+           
+            
+
+            <!-- Innovation Hub -->
+            
+    </div> <!-- end of main services class -->
+            
+</div><!-- end of row class -->
 <!--</div> end of container class -->

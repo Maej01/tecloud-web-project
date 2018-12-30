@@ -83,9 +83,8 @@
         <% }); %>
     </div> -->
     <div class="row aboutCards">
-            <!-- <h2 class="center">Know our interest</h2>
-            <h3 class="center">we are focused in pushing towards our goals</h3> -->
-            <div class="col s12 m3">
+        <div class="container">
+            <div class="col s12 m4 pull-m1 pull-l1">
                 <div class="card">
                     <div class="card-content">
                         <i class="fas fa-bullseye"></i>
@@ -97,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m3">
+            <div class="col s12 m4">
                 <div class="card">
                     <div class="card-content">
                         <i class="fas fa-eye"></i>
@@ -109,8 +108,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m3">
-                <div class="card">
+            <div class="col s12 m4 push-m1 push-l1">
+                <div class="card core-values">
                     <div class="card-content">
                         <i class="fas fa-eye"></i>
                         <h4 class="center"><b>Core Values</b></h4>
@@ -123,7 +122,7 @@
                         </ul>
                     </div>
                 </div>
-
+    
                 <!-- modal structure of the core values -->
                 <div id="value1" class="modal">
                     <div class="modal-content">
@@ -187,71 +186,44 @@
                     </div>
                 </div>
             </div>
-             <div class="col s12 m3">
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-file-alt"></i>
-                        <h4 class="center"><b>Our Team</b></h4> 
-                        <p>We have a dynamic team comprising of highly experienced:</p> 
-                        <ul> 
-                            <li>ICT professionals with over 10 years experience</li>
-                            <li>Graphics designers and Multimedia professionals</li>
-                            <li>Software project managers and developers with over 5 years experience</li>
-                        </ul>
-                    </div>
+        </div>
+        
+        <!--
+        <div class="col s12 m3 wow flipInY" data-wow-delay="2s">
+            <div class="card">
+                <div class="card-content">
+                    <i class="material-icons white-text">event_note</i>
+                    <h4 class="center"><b>Objective</b></h4> -->
+                    <!-- loading the objective data -->
+                    <!-- <% aboutDt.forEach(function(item){ %>
+                        <p><%= item.objective %></p>
+                    <% }); %>
                 </div>
             </div>
-            <!--
-            <div class="col s12 m3 wow flipInY" data-wow-delay="2s">
-                <div class="card">
-                    <div class="card-content">
-                        <i class="material-icons white-text">event_note</i>
-                        <h4 class="center"><b>Objective</b></h4> -->
-                        <!-- loading the objective data -->
-                        <!-- <% aboutDt.forEach(function(item){ %>
-                            <p><%= item.objective %></p>
-                        <% }); %>
-                    </div>
-                </div>
-            </div> -->
-        </div> <!-- end of about cards -->
+        </div> -->
+    </div> <!-- end of about cards -->
         <div class="container">
             <div class="row">
                 <div class="col m2 l4 bg-of-soft-team hide-on-small-only">
                     <img src="/images/stf4.png" alt="soft-team-pic">
                 </div>
-                <div class="col s12 m8 l8 push-m3 push-l1">
-                    <h5 class="about"><b>Background of the Software Team</b></h5>
+                <div class="col s12 m8 l8 push-m3 push-l1" id="ourTeamUl">
+                    <h5 class="about"><b>Our Team</b></h5>
+                    <p>We have a dynamic team comprising of highly experienced:</p>
                     <!-- loading the background data -->
-                    <% aboutDt.forEach(function(item){ %>
+                    <ul> 
+                        <li>ICT professionals with over 10 years experience</li>
+                        <li>Graphics designers and Multimedia professionals</li>
+                        <li>Software project managers and developers with over 5 years experience</li>
+                    </ul>
+                    <a class="waves-effect waves-light btn-small blue" href="#ourTeam">learn more</a>
+                    <!-- <% aboutDt.forEach(function(item){ %>
                         <p><%= item.background_of_softTeam %></p>
-                    <% }); %>
+                    <% }); %> -->
                 </div>
             </div>
         </div> <!-- end of background of the software team-->
-        <!-- <div class="container"> 
-            <h5 class="about"><b>Status</b></h5>
-            loading the current status data 
-            <% aboutDt.forEach(function(item){ %>
-                <p><%= item.current_status %></p>
-            <% }); %>
-        </div>  end of current status -->
-        <!--<div class="container">
-            <div class="row">
-                <div class="col m2 l4 aboutImgs hide-on-small-only">
-                    <img src="/images/what-we-do.png" alt="what-we-do-icon">
-                </div>
-                <div class="col s12 m10 l8 push-m1 push-l1">
-                    <h5 class="about"><b>What we do</b></h5>
-                     loading the brief services data 
-                    <% aboutDt.forEach(function(item){ %>
-                        <p><%= item.intro_of_services %></p>
-                    <% }); %>
-                </div>
-            </div>
-        </div>  end of brief intro of the sevices-->
-
-
+        
       <!-- including the js scripts template -->
       <% include partials/template/jsscripts.ejs %>
 </body>

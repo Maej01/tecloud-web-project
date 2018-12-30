@@ -71,30 +71,81 @@ nav img{
 
 .header-cards{
     margin-left: 40px; 
+    margin-top: 30px;
+}
+
+.header-cards .card{
+    height: 200px;
+    background-color: #ffffff00; /*transparent color*/
 }
 
 .header-cards .card-title{
     font-size: 20px !important;
     padding: 20px 10px 0 10px;
+    color: #ffcc00;
+    filter: brightness(100%);
 }
 
-.header-cards p, li{
-    font-family: 'Gill Sans';
-    font-size: 15px;
+#left-title{
+    margin-left: -10px;
+}
+
+#right-title{
+    margin-left: -10px;
+}
+
+.header-cards p{
+    font-family: Arial;
+    font-size: 17px !important;
+    color: #fff;
 }
 
 .header-cards ul {
-    list-style: none;
-}
-  
-.header-cards ul li:before {
-    content: '✓';
+    margin-top: -5px;
 }
 
-.header-cards .card{
-    height: 200px;
-    /* background-color: #cccccc;
-    opacity: 0.1; */
+.header-cards ul li{
+    font-family: Arial;
+    font-size: 17px !important;
+    margin-left: -20px;
+    padding: 3px 0;
+    color: #fff;
+}
+
+
+.header-cards ul li:before {
+    content: '✓';
+    padding: 0 15px;
+    margin-left: -40px;
+    color: green;
+}
+
+/* INDEX SERVICES */
+.index-services .card{
+    width: 80vh !important;
+    height: 40vh !important;
+    margin-bottom: 10vh;
+    box-shadow: 0px 10px 10px gray;
+    transition: 1s;
+}
+
+.index-services .card:hover{
+    box-shadow: 0px 15px 10px rgb(194, 194, 194);
+    transition: 1s;
+}
+
+.index-services .btn-small {
+    background-color: #7030a8 !important;
+    box-shadow: 0px 15px 10px rgb(184, 180, 180);
+    transition: 1s;
+}
+
+.index-services .card h4{
+    font-size: 15px ;
+}
+
+.index-services .card p{
+    font-size: 14px;
 }
 
 
@@ -108,6 +159,22 @@ nav img{
     box-shadow: 0px 15px 15px gray;   
 } 
 
+.section-follow{
+    height: 50px;
+    background-color: #000; 
+    opacity: 0.9;
+    margin-top: -20px;
+    margin-bottom: 10%;
+    box-shadow: 0px 15px 15px gray; 
+}
+
+.section-follow h4{
+    color: #cccccc;
+    margin-top: -15px;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
 .services_bar h4{
     color: #cccccc;
     font-size: 20px;
@@ -116,10 +183,18 @@ nav img{
 
 .services .card{
     width: 80vh !important;
-    height: 45vh !important;
+    height: 55vh !important;
     margin-bottom: 10vh;
     box-shadow: 0px 10px 10px gray;
     transition: 1s;
+}
+
+.services .index-serv-big-cards .card{
+    height: 50px !important;
+}
+
+.services .index-serv-big-cards .card{
+    height: 50px !important;
 }
 
 .services hr{
@@ -132,16 +207,181 @@ nav img{
     width: 100%;
 }
 
+#services_main_tip{
+    padding-top: 50px;
+
+}
+#services_tip{
+    padding-bottom: 50px;
+}
+
 .services .btn-small {
     background-color: #7030a8 !important;
     box-shadow: 0px 15px 10px rgb(184, 180, 180);
     transition: 1s;
 }
 
-.services .card:hover{
+.services .big-card p{
+    font-size: 14px;
+}
+
+.services .big-card .card:hover{
     box-shadow: 0px 15px 10px rgb(194, 194, 194);
     transition: 1s;
 }
+
+.services .big-card .card h4{
+    font-size: 15px;
+}
+
+.services .big-card .card h5{
+    font-size: 13px;
+}
+
+.services .small-cards .card{
+    /* background-color: #7030a8 !important; */
+    /* background-color: rgb(128,128,128); */
+    background-color: #eeeeee;
+    /* background-color: rgb(127,127,127); */
+}
+
+.services .small-cards .card:hover{
+    box-shadow: 0px 15px 10px rgb(194, 194, 194);
+}
+
+.services .small-cards .card h6{
+    font-size: 13px;
+    padding: 20px 0 0 20px;
+}
+
+.services .small-cards .card p{
+    padding: 0 0 0 15px;
+    font-size: 11px;
+}
+
+/* services 1 style */
+.services1{
+    margin-top: 50px;
+}
+
+.services1 .big-card .card{
+    height: 43vh !important;
+    margin-left: 50px;
+}
+
+.services1 .small-cards .card{
+    height: 15vh !important;
+    width: 300px !important;
+    margin: -10px 0 0 -40px;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+
+/* services 2 style */
+.services2{
+    padding: 80px 0;
+}
+
+.services2 .big-card .card{
+    height: 43vh !important;
+    margin-left: 70px !important;
+}
+
+.services2 .small-cards .card{
+    height: 15vh !important;
+    width: 300px !important;
+    margin: -10px 0 0 40;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+/* services 3 style */
+.services3{
+    padding: 80px 0;
+}
+
+.services3 .big-card .card{
+    height: 40vh !important;
+    margin-left: 50px;
+}
+
+.services3 .small-cards .card{
+    width: 300px !important;
+    margin: -10px 0 0 -40px;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.services3 .small-cards .no_bullet .card{
+    height: 15vh !important;
+}
+
+.services3 .small-cards .bullet .card{
+    height: 25vh !important;
+}
+
+.services3 .small-cards #__4bullet .card{
+    height: 30vh !important;
+    margin-top: -70px;
+}
+
+/* services 4 style */
+.services4{
+    padding: 80px 0;
+}
+
+.services4 .big-card .card{
+    height: 48vh !important;
+    margin-left: 70px !important;
+}
+
+.services4 .small-cards .card{
+    height: 15vh !important;
+    width: 300px !important;
+    margin: -10px 0 0 40;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+/* services 5 style */
+.services5{
+    padding: 80px 0;
+}
+
+.services5 .big-card .card{
+    height: 40vh !important;
+    margin-left: 50px;
+}
+
+.services5 .small-cards .card{
+    height: 15vh !important;
+    width: 300px !important;
+    margin: -10px 0 0 -40px;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+/*  services6 style */
+
+.services6{
+    padding: 80px 0;
+}
+
+.services6 .big-card .card{
+    height: 40vh !important;
+    margin-left: 50px;
+}
+
+.services6 .small-cards .card{
+    width: 300px !important;
+    margin: -10px 0 0 40px;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.services6 .small-cards #no_bullet .card{
+    height: 15vh !important;
+}
+.services6 .small-cards #innc_list_card .card{
+    height: 30vh !important;
+    /* margin-top: -70px; */
+}
+
 
 /* ABOUT SECTION STYLES */
 #about{
@@ -185,6 +425,7 @@ nav img{
 .aboutCards h4{
     color: #ffcc00;
     font-size: 20px;
+    margin: 10px 0;
 }
 
 .about h5{
@@ -203,7 +444,7 @@ nav img{
     font-size: 20px;
     padding: 15px 15px;
     border-radius: 50%;
-    transform: translate(200%, -80%);
+    transform: translate(180%, -90%);
     background-color: #7030a8;
     color: #fff;
 }
@@ -244,6 +485,7 @@ nav img{
 .about-container ul li:before {
     content: '✓';
     padding: 0 15px;
+    color: green;
 }
 
 .about-container .card .card-title{
@@ -260,6 +502,20 @@ nav img{
 
 .about-container .modal{
     margin-top: 500px !important; 
+}
+
+#ourTeamUl ul li:before{
+    content: '✓';
+    padding: 0 15px;
+    color: green;
+}
+
+.core-values ul li{
+    list-style: none;
+}
+
+.core-values li a{
+    color: #000 !important;
 }
 
 /* our team style */
@@ -310,11 +566,6 @@ nav img{
     margin-top: 5%;
     margin-bottom: 10% !important;
 }
-
-/* .contact-page-container .card{
-    background-color: #000;
-    opacity: 0.9;
-} */
 
 .contact-page-container h5{
     color: #7030a8;
@@ -371,9 +622,9 @@ nav img{
         margin-top: 139px;   
     } 
 
-    .services .card{
+    /* .services .card{
         height: 38vh !important;
-    }
+    } */
 }
 
 /* 320 x 480 screen sizes */
