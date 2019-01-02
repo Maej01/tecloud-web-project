@@ -10,19 +10,23 @@
                     <h4><b><%= services.Website.title %></b><i class="material-icons blue-text right">web</i> </h4>
                     <p><%= services.Website.description %></p>
                     <hr>
-                    <input type="button" class="btn-small right white-text" value="Read More">
-                </div>
+                    <a href="/services">
+                        <input type="button" class="btn-small right white-text" value="Read More">
+                    </a>
+                </div> 
             </div>
         </div>
 
         <!-- apps development -->
-        <div class="col s12 m6 wow slideInUp index-big push-m1">
+        <div class="col s12 m6 wow slideInUp index-big push-m1" id="apps">
             <div class="card">
                 <div class="card-content">
                     <h4><b><%= services.AppDev.title %></b><i class="material-icons blue-text right">phone_iphone</i> </h4>
                     <p><%= services.AppDev.description %></p>
                     <hr>
-                    <input type="button" class="btn-small right white-text" value="Read More">
+                    <a href="/services">
+                        <input type="button" class="btn-small right white-text" value="Read More">
+                    </a>
                 </div>
             </div>
         </div>
@@ -50,6 +54,31 @@
                 </div>
             </div>
         </div>
+
+        <!-- MUltimedia -->
+        <div class="col s12 m6 wow slideInUp index-big pull-m2">
+            <div class="card">
+                <div class="card-content">
+                    <h4><b><%= services.Multimedia.title %><i class="material-icons blue-text right">web</i></b></h4>
+                    <p><%= services.Multimedia.description %></p>
+                    <hr>
+                    <input type="button" class="btn-small right white-text" value="Read More">
+                </div>
+            </div>
+        </div>
+
+        <!-- Incuabtion HUB -->
+        <div class="col s12 m6 wow slideInUp index-big push-m1">
+            <div class="card">
+                <div class="card-content">
+                    <h4><b><%= services.Inncubation.title %></b><i class="material-icons blue-text right">phone_iphone</i> </h4>
+                    <p><%= services.Inncubation.description %></p>
+                    <hr>
+                    <input type="button" class="btn-small orange right" value="Read More">
+                </div>
+            </div>
+        </div>
+
     </div> <!-- end main row class -->
 <!--</div>  end of services class-->
 </div> <!--  end of container class -->
