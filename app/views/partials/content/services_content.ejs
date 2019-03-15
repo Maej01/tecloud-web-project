@@ -4,7 +4,7 @@
            
            <div class="col s12 l12">
                <!-- tabs section -->
-                <ul class="tabs">
+                <ul class="tabs hide-on-med-and-down">
                     <li class="tab col s2">
                         <a href="#website" class="indigo-text text-darken-4">Website</a>
                     </li>
@@ -29,7 +29,7 @@
                 </ul>
 
             <!-- web development -->
-            <div class="services1" id="website">
+            <div class="services_contents" id="website">
                 <div class="col s12 m6 wow slideInLeft big-card" >
                     <div class="card">
                         <div class="card-content">
@@ -41,15 +41,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 wow fadeIn right small-cards" data-wow-delay="0.5s">
+                <div class="col s12 m6 wow fadeIn small-cards" data-wow-delay="0.5s">
                     <div class="row">
-                        <div class="col s6 m3">
+                        <div class="col s6 m3 general">
                             <div class="card ">
                                 <h6><b><%= services.Website.right_web_heading1 %></b></h6>
                                 <p><%= services.Website.right_web_content1 %></p>
                             </div>
                         </div>
-                        <div class="col s6 m3 push-m3">
+                        <div class="col s6 m3 push-m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.Website.right_web_heading2 %></b></h6>
                                 <p><%= services.Website.right_web_content2 %></p>
@@ -57,13 +57,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s6 m3">
+                        <div class="col s6 m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.Website.right_web_heading3 %></b></h6>
                                 <p><%= services.Website.right_web_content3 %></p>
                             </div>
                         </div>
-                        <div class="col s6 m3 push-m3">
+                        <div class="col s6 m3 push-m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.Website.right_web_heading4 %></b></h6>
                                 <p><%= services.Website.right_web_content4 %></p>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s6 m3">
+                        <div class="col s6 m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.Website.right_web_heading5 %></b></h6>
                                 <p><%= services.Website.right_web_content5 %></p>
@@ -82,8 +82,8 @@
             </div>
             
             <!-- apps development -->
-            <div class="services2" id="apps">
-                <div class="col s12 m6 wow slideInRight big-card right" >
+            <div class="services_contents" id="apps">
+                <div class="col s12 m6 wow slideInLeft big-card" >
                     <div class="card">
                         <div class="card-content">
                             <h4><b><%= services.AppDev.title %></b><i class="material-icons blue-text right">phone_iphone</i> </h4>
@@ -94,15 +94,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 wow fadeIn small-cards" data-wow-delay="0.5s">
+                <div class="col s12 m6 wow fadeIn small-cards" data-wow-delay="0.5s"> 
                     <div class="row">
-                        <div class="col s6 m3">
-                            <div class="card ">
+                        <div class="col s6 m3 general">
+                            <div class="card">
                                 <h6><b><%= services.AppDev.right_app_heading1 %></b></h6>
                                 <p><%= services.AppDev.right_app_content1 %></p>
                             </div>
                         </div>
-                        <div class="col s6 m3 push-m3">
+                        <div class="col s6 m3 push-m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.AppDev.right_app_heading2 %></b></h6>
                                 <p><%= services.AppDev.right_app_content2 %></p>
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s6 m3">
+                        <div class="col s6 m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.AppDev.right_app_heading3 %></b></h6>
                                 <p><%= services.AppDev.right_app_content3 %></p>
@@ -121,8 +121,8 @@
             </div>
 
             <!-- ICT -->
-            <div class="services3" id="ICT">
-                <div class="col s12 m6 services3 wow slideInLeft big-card" >
+            <div class="services_contents" id="ICT">
+                <div class="col s12 m6 wow slideInLeft big-card" >
                     <div class="card">
                         <div class="card-content">
                             <h4><b><%= services.ICT.title %><i class="material-icons blue-text right">web</i></b></h4>
@@ -133,15 +133,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 wow fadeIn right small-cards" data-wow-delay="0.5s">
+                <div class="col s12 m6 wow fadeIn small-cards" data-wow-delay="0.5s">
                     <div class="row">
-                        <div class="col s6 m3 no_bullet">
+                        <div class="col s6 m3 general">
                             <div class="card">
                                 <h6><b><%= services.ICT.right_ICT_heading1 %></b></h6>
                                 <p><%= services.ICT.right_ICT_content1 %></p>
                             </div>
                         </div>
-                            <div class="col s6 m3 push-m3 bullet">
+                        <div class="col s6 m3 push-m3 ICT-sec-child">
                             <div class="card">
                                 <h6 ><b><%= services.ICT.right_ICT_heading2 %></b></h6>
                                 <p><%= services.ICT.right_ICT_content2.bullet1 %></p>
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s6 m3" id="__4bullet">
+                        <div class="col s6 m3 ICT-thr-child">
                             <div class="card">
                                 <h6 ><b><%= services.ICT.right_ICT_heading3 %></b></h6>
                                 <p><%= services.ICT.right_ICT_content3.bullet3 %></p>
@@ -159,7 +159,7 @@
                                 <p><%= services.ICT.right_ICT_content3.bullet6 %></p>
                             </div>
                         </div>
-                        <div class="col s6 m3 push-m3 bullet">
+                        <div class="col s6 m3 push-m3 ICT-fif-child">
                             <div class="card">
                                 <h6 ><b><%= services.ICT.right_ICT_heading4 %></b></h6>
                                 <p><%= services.ICT.right_ICT_content4.bullet7 %></p>
@@ -171,8 +171,8 @@
             </div>
 
             <!-- Digital Marketing -->
-            <div class="services4" id="dgmkt">
-                <div class="col s12 m6 wow slideInRight big-card right">
+            <div class="services_contents" id="dgmkt">
+                <div class="col s12 m6 wow slideInLeft big-card">
                     <div class="card">
                         <div class="card-content">
                             <h4><b><%= services.DigitalMkt.title %></b><i class="material-icons blue-text right">phone_iphone</i> </h4>
@@ -185,13 +185,13 @@
                 </div>
                 <div class="col s12 m6 wow fadeIn small-cards" data-wow-delay="0.5s">
                     <div class="row">
-                        <div class="col s6 m3">
-                            <div class="card ">
+                        <div class="col s6 m3 general">
+                            <div class="card">
                                 <h6><b><%= services.DigitalMkt.right_dm_heading1 %></b></h6>
                                 <p><%= services.DigitalMkt.right_dm_content1 %></p>
                             </div>
                         </div>
-                        <div class="col s6 m3 push-m3">
+                        <div class="col s6 m3 push-m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.DigitalMkt.right_dm_heading2 %></b></h6>
                                 <p><%= services.DigitalMkt.right_dm_content2 %></p>
@@ -199,7 +199,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s6 m3">
+                        <div class="col s6 m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.DigitalMkt.right_dm_heading3 %></b></h6>
                                 <p><%= services.DigitalMkt.right_dm_content3 %></p>
@@ -210,7 +210,7 @@
             </div>
 
             <!-- Multimedia -->
-            <div class="services5" id="multi">
+            <div class="services_contents" id="multi">
                 <div class="col s12 m6 wow slideInLeft big-card">
                     <div class="card">
                         <div class="card-content">
@@ -222,15 +222,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 wow fadeIn right small-cards" data-wow-delay="0.5s">
+                <div class="col s12 m6 wow fadeIn small-cards" data-wow-delay="0.5s">
                     <div class="row">
-                        <div class="col s6 m3">
-                            <div class="card ">
+                        <div class="col s6 m3 general">
+                            <div class="card">
                                 <h6><b><%= services.Multimedia.right_mul_heading1 %></b></h6>
                                 <p><%= services.Multimedia.right_mul_content1 %></p>
                             </div>
                         </div>
-                            <div class="col s6 m3 push-m3">
+                            <div class="col s6 m3 push-m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.Multimedia.right_mul_heading2 %></b></h6>
                                 <p><%= services.Multimedia.right_mul_content2 %></p>
@@ -238,13 +238,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s6 m3">
+                        <div class="col s6 m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.Multimedia.right_mul_heading3 %></b></h6>
                                 <p><%= services.Multimedia.right_mul_content3 %></p>
                             </div>
                         </div>
-                        <div class="col s6 m3 push-m3">
+                        <div class="col s6 m3 push-m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.Multimedia.right_mul_heading4 %></b></h6>
                                 <p><%= services.Multimedia.right_mul_content4 %></p>
@@ -252,7 +252,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s6 m3">
+                        <div class="col s6 m3 general">
                             <div class="card">
                                 <h6 ><b><%= services.Website.right_web_heading5 %></b></h6>
                                 <p><%= services.Website.right_web_content5 %></p>
@@ -263,8 +263,8 @@
             </div>
 
             <!-- Incuabtion HUB -->
-            <div class="services6" id="innc">
-                <div class="col s12 m6 wow slideInRight big-card right">
+            <div class="services_contents" id="innc">
+                <div class="col s12 m6 wow slideInLeft big-card">
                     <div class="card">
                         <div class="card-content">
                             <h4><b><%= services.Inncubation.title %></b><i class="material-icons blue-text right">phone_iphone</i> </h4>
@@ -275,15 +275,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 wow fadeIn small-cards" data-wow-delay="0.5s">
+                <div class="col s12 m6 wow fadeIn small-cards right" data-wow-delay="0.5s">
                     <div class="row">
-                        <div class="col s6 m3" id="no_bullet">
+                        <div class="col s6 m3 general">
                             <div class="card ">
                                 <h6><b><%= services.Inncubation.right_innc_heading1 %></b></h6>
                                 <p><%= services.Inncubation.right_innc_content1 %></p>
                             </div>
                         </div>
-                        <div class="col s6 m3 push-m3 " id="innc_list_card">
+                        <div class="col s6 m3 push-m3 Innc-sec-child">
                             <div class="card">
                                 <h6 ><b><%= services.Inncubation.right_innc_heading2 %></b></h6>
                                 <p><%= services.Inncubation.right_innc_content2.bullet1 %></p>

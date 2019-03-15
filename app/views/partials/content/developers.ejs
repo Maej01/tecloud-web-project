@@ -1,0 +1,49 @@
+<% if (pageID == 'ourTeamPage'){%>
+    <h5 class="center" id="services_tip">Development Team</h5>
+<% } %>
+
+<div class="row">
+    <% ourDevelopersData.forEach(function(member){ %>
+        <div class="col s12 m3">
+            <% if(pageID == 'ourTeamPage') {%>
+                <div class="card">
+                    <div class="card-image responsive">
+                        <img src="/images/teamImages/<%= member.shortname %>.jpg">
+                    </div>
+                    <div class="card-content">
+                        <div class="sumDetails">
+                            <span class="card-title center"><a href="/ourTeam/<%= member.shortname%>"><%= member.name %></a></span>
+                            <p class="center"><%= member.role %></p>
+                            <div class="center line"></div>
+                        </div>
+                        <p class="hide-on-small-only"><%= member.summary %></p>
+                        <a href="/ourTeam/<%= member.shortname%>" class="view-profile">view profile</a>
+                    </div>
+                    <!-- Card action with social media icons -->
+                    <div class="card-action actionBg" >
+                        <span>Follow on</span>
+                        <a href="#" class="tooltip" target="_blank" id="social_media_icons">
+                            <i class="fab fa-facebook"></i><span class="tooltip-text">Facebook</span>
+                        </a>
+                        <a href="#" class="tooltip" target="_blank"  id="social_media_icons">
+                            <i class="fab fa-twitter"></i><span class="tooltip-text">Twitter</span></a> 
+                        <a href="#" class="tooltip" target="_blank" id="social_media_icons">
+                            <i class="fab fa-linkedin"></i><span class="tooltip-text">Linkedin</span></a>
+                        <a href="#" class="tooltip" target="_blank" id="social_media_icons">
+                            <i class="fab fa-instagram"></i><span class="tooltip-text">Instagram</span></a>
+                    </div>
+                </div>
+            <% } %> 
+        </div>
+            <!-- changing the page view if the page not matches the ourTeamPage -->
+            <!-- <% if(pageID !== 'ourTeamPage') {%>
+                <div class="col s12 m7"><%- member.description %></div>
+            <% } %> -->
+            <!-- check if the pageID is member details -->
+            <!-- <% if(pageID == 'memberDetail'){%>
+                <div class="col s12 m5 pull-m1">
+                    <img src="/images/teamImages/<%= member.shortname %>.jpg" alt="Photo of <%= member.name %>" class="materialboxed memberBigImg">
+                </div>
+            <% } %> -->
+    <%});%>
+</div>

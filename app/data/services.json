@@ -3,7 +3,7 @@
             "Website": {
                 "title": "Website Design and Development ",
                 "sub_title":"Impress your customers with a website that works",
-                "description": "For individuals, businesses and entrepreneurs, we design, develop and maintain websites that serve your purpose. Don’t worry our step-by-step approach will guide us from idea stage until you launch your website...",
+                "description": "For individuals, businesses and entrepreneurs, we design, develop and maintain websites that serve your purpose.",
                 "full_description":{
                         "point1": "Step-by-step approach to understand what you have in mind",
                         "point2": "You will get a website that meets and serves your business purpose, and deliver value for your customers",
@@ -13,13 +13,13 @@
                 "image":"",
                 "right_web_heading1": "A website that works",
                 "right_web_content1": "Get a website that makes your customers happy to revisit",
-                "right_web_heading2": "Website and Business Fit",
+                "right_web_heading2": "Website and business fit",
                 "right_web_content2": "Get a website that match and serves your business needs",
-                "right_web_heading3": "Existing Website",
+                "right_web_heading3": "Existing website",
                 "right_web_content3": "Get a website that makes your customers happy to revisit",
-                "right_web_heading4": "Website and Business Fit",
+                "right_web_heading4": "Website and business fit",
                 "right_web_content4": "Upgrade your existing website and add new features of your choice",
-                "right_web_heading5": "Data and Analytics",
+                "right_web_heading5": "Data and analytics",
                 "right_web_content5": "Know about the\nNumber of visitors\nActivities of visitors"
 
             },
@@ -27,12 +27,12 @@
             {
                 "title": "App Development",
                 "sub_title":"Keep your customers close with your mobile App",
-                "description": "We design, develop and maintain Android and ios apps that meet and serve your business needs. Unlike others we provide affordable continuous maintenance support to ensure App optimization at all times",
-                "right_app_heading1": "From Idea to App",
+                "description": "We design, develop and maintain Android and ios apps that meet and serve your business needs.",
+                "right_app_heading1": "From idea to app",
                 "right_app_content1": "Share your idea, we will get you the App",
-                "right_app_heading2": "Which type of App?",
+                "right_app_heading2": "Which type of app?",
                 "right_app_content2": "We do both web and mobile Apps",
-                "right_app_heading3": "App Maintenance",
+                "right_app_heading3": "App maintenance",
                 "right_app_content3": "We design, develop and maintain your App for as long as you want",
                 "image":""
             },
@@ -40,7 +40,7 @@
             {
                 "title": "ICT",
                 "sub_title":"Pay and only use what you need",
-                "description": "Tailor your Information and Communication Technology solutions to support your business growth. We design, deploy and support your ICT services regardless of your size or location",
+                "description": "Tailor your Information and Communication Technology solutions to support your business growth.",
                 "right_ICT_heading1": "Costs",
                 "right_ICT_content1": "Reduce your IT support cost by using cloud technologies, pay for what you use",
                 "right_ICT_heading2": "Networks and Servers",
@@ -63,9 +63,9 @@
             },
             "DigitalMkt":
             {
-                "title": "Digital and Social Media Marketing",
+                "title": "Digital & Social Media Marketing",
                 "sub_title":"Create a digital identity and mindset for your products, services or business that attracts customers",
-                "description":"Are you wondering how you can make your website popular or what can you do to attract and retain more people on your website? Yes it is possible; with the right tools, skills and mindset, you can reach your target customers through your website and social media platforms.",
+                "description":"Are you wondering how you can make your website popular or what can you do to attract and retain more users.",
                 "right_dm_heading1": "Customers",
                 "right_dm_content1": "Attract customers to your website",
                 "right_dm_heading2": "Analytics",
@@ -76,9 +76,9 @@
             },
             "Multimedia":
             {
-                "title": "Multimedia and Graphics Design",
+                "title": "Multimedia & Graphics Design",
                 "sub_title":"Designs that resonate with your needs",
-                "description":"The best media and designs experiences are built by TeCloud Platform. Translate and communicate your thoughts through designs",
+                "description":"The best media and designs experiences are built by TeCloud Platform. We build you your desire.",
                 "right_mul_heading1": "Social media identity",
                 "right_mul_content1": "Flyers that suit your Facebook, YouTube, LinkedIn, Twitter, instagram business pages",
                 "right_mul_heading2": "Your eyes with the best moments",
@@ -92,7 +92,7 @@
             {
                 "title": "Incubation Hub",
                 "sub_title":"We translate your ideas into innovative products or services",
-                "description":"We believe that there are people who have great ideas but lack the resources and skills to transform those ideas into innovative products and services.",
+                "description":"We believe that there are people who have great ideas but lack the resources and skills to transform those ideas.",
                 "right_innc_heading1": "New ideas",
                 "right_innc_content1": "Your ideas are yours, we just help turn them into innovations for you",
                 "right_innc_heading2": "You will get", 
