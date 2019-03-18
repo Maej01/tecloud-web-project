@@ -1,141 +1,124 @@
 {
   
-            "Website": {
-                "title": "Website Design and Development ",
-                "sub_title":"Impress your customers with a website that works",
-                "description": "For individuals, businesses and entrepreneurs, we design, develop and maintain websites that serve your purpose.",
-                "full_description":{
-                        "point1": "Step-by-step approach to understand what you have in mind",
-                        "point2": "You will get a website that meets and serves your business purpose, and deliver value for your customers",
-                        "point3": "You will get monthly  information about your customers who visited your website and the activities they are engage in", 
-                        "point4": "We will maintain and optimize your website with your latest information and integrate it with emerging technologies" 
-                    },
-                "image":"",
-                "right_web_heading1": "A website that works",
-                "right_web_content1": "Get a website that makes your customers happy to revisit",
-                "right_web_heading2": "Website and business fit",
-                "right_web_content2": "Get a website that match and serves your business needs",
-                "right_web_heading3": "Existing website",
-                "right_web_content3": "Get a website that makes your customers happy to revisit",
-                "right_web_heading4": "Website and business fit",
-                "right_web_content4": "Upgrade your existing website and add new features of your choice",
-                "right_web_heading5": "Data and analytics",
-                "right_web_content5": "Know about the\nNumber of visitors\nActivities of visitors"
-
+    "Website": {
+        "title": "Website Design and Development ",
+        "sub_title":"Impress your customers with a website that works",
+        "description": "For individuals, businesses and entrepreneurs, we design, develop and maintain websites that serve your purpose.",
+        "full_description":{
+                "point1": "Step-by-step approach to understand what you have in mind",
+                "point2": "You will get a website that meets and serves your business purpose, and deliver value for your customers",
+                "point3": "You will get monthly  information about your customers who visited your website and the activities they are engage in", 
+                "point4": "We will maintain and optimize your website with your latest information and integrate it with emerging technologies" 
             },
-            "AppDev":
-            {
-                "title": "App Development",
-                "sub_title":"Keep your customers close with your mobile App",
-                "description": "We design, develop and maintain Android and ios apps that meet and serve your business needs.",
-                "right_app_heading1": "From idea to app",
-                "right_app_content1": "Share your idea, we will get you the App",
-                "right_app_heading2": "Which type of app?",
-                "right_app_content2": "We do both web and mobile Apps",
-                "right_app_heading3": "App maintenance",
-                "right_app_content3": "We design, develop and maintain your App for as long as you want",
-                "image":""
-            },
-            "ICT":
-            {
-                "title": "ICT",
-                "sub_title":"Pay and only use what you need",
-                "description": "Tailor your Information and Communication Technology solutions to support your business growth.",
-                "right_ICT_heading1": "Costs",
-                "right_ICT_content1": "Reduce your IT support cost by using cloud technologies, pay for what you use",
-                "right_ICT_heading2": "Networks and Servers",
-                "right_ICT_content2": {
-                    "bullet1": "• Your IT infrastructure in the hands of reliable IT professionals",
-                    "bullet2": "• We design,  implement and manage LAN and WAN Networks"
-                },
-                "right_ICT_heading3": "Device Management",
-                "right_ICT_content3": {
-                    "bullet3":"• Biometric attendance system",
-                    "bullet4":"• CCTV installation and cameras",
-                    "bullet5":"• Collaboration equipment (Video conferencing)",
-                    "bullet6":"• Mobile Device Management (MDM)"
-                },
-                "right_ICT_heading4": "Lease Cloud services at affordable cost",
-                "right_ICT_content4": {
-                    "bullet7":"• Have your IT cloud infrastructure designed and managed by professionals ",
-                    "bullet8":"• Increase your security by leasing anti-virus services"
-                }
-            },
-            "DigitalMkt":
-            {
-                "title": "Digital & Social Media Marketing",
-                "sub_title":"Create a digital identity and mindset for your products, services or business that attracts customers",
-                "description":"Are you wondering how you can make your website popular or what can you do to attract and retain more users.",
-                "right_dm_heading1": "Customers",
-                "right_dm_content1": "Attract customers to your website",
-                "right_dm_heading2": "Analytics",
-                "right_dm_content2": "know how many people visited your website today",
-                "right_dm_heading3": "Identity",
-                "right_dm_content3": "Create a social media identity for your business",
-                "image":""
-            },
-            "Multimedia":
-            {
-                "title": "Multimedia & Graphics Design",
-                "sub_title":"Designs that resonate with your needs",
-                "description":"The best media and designs experiences are built by TeCloud Platform. We build you your desire.",
-                "right_mul_heading1": "Social media identity",
-                "right_mul_content1": "Flyers that suit your Facebook, YouTube, LinkedIn, Twitter, instagram business pages",
-                "right_mul_heading2": "Your eyes with the best moments",
-                "right_mul_content2": "Photography that capture best moments in weddings, Parties, shows",
-                "right_mul_heading3": "Designs",
-                "right_mul_content3": "Logos, Business card, Banners, Annual Report templates and many more",
-                "right_mul_heading4": "Multimedia",
-                "right_mul_content4": "Concept development for reality shows, Video shooting, editing etc."
-            },
-            "Inncubation":
-            {
-                "title": "Incubation Hub",
-                "sub_title":"We translate your ideas into innovative products or services",
-                "description":"We believe that there are people who have great ideas but lack the resources and skills to transform those ideas.",
-                "right_innc_heading1": "New ideas",
-                "right_innc_content1": "Your ideas are yours, we just help turn them into innovations for you",
-                "right_innc_heading2": "You will get", 
-                "right_innc_content2": {
-                    "bullet1":"• Confidentiality and right to your idea",
-                    "bullet2":"• A business model",
-                    "bullet3":"• A business plan",
-                    "bullet4":"• An MVP",
-                    "bullet5":"• Mentorship on startup your business",
-                    "bullet6":"• Support to reach investors"
-                    
-            },
-            "Innovation":
-            {
-                "title": "Innovation Hub",
-                "sub_title":"Become an IT and software development professional",
-                "description":"Add value to what you do by joining an agile team to increase your professionalism and love for what you do. You can join any of our teams, designers, IT, developers or product managers to learn the skills required to become a professional.",
-                "right_inno_heading1": "Increase your Agility",
-                "right_inno_content1": "Develop and internalize a mindset appropriate for software development by joining one of our teams",
-                "right_inno_heading2": "From Zero to Hero",
-                "right_inno_content2": "Learn how to code from scratch, no prerequisites and interact with experienced developers",
-                "right_inno_heading3": "Face Reality",
-                "right_inno_content3": "An opportunity to work in real life projects and put your skills to work",
-                "right_inno_heading4": "How to Join?",
-                "right_inno_content4": "It’s simple, just contact us"
-            }
+        "image":"",
+        "right_web_heading1": "A website that works",
+        "right_web_content1": "Get a website that makes your customers happy to revisit",
+        "right_web_heading2": "Website and business fit",
+        "right_web_content2": "Get a website that match and serves your business needs",
+        "right_web_heading3": "Existing website",
+        "right_web_content3": "Get a website that makes your customers happy to revisit",
+        "right_web_heading4": "Website and business fit",
+        "right_web_content4": "Upgrade your existing website and add new features of your choice",
+        "right_web_heading5": "Data and analytics",
+        "right_web_content5": "Know about the\nNumber of visitors\nActivities of visitors"
 
-
-            
-
-
- 
-
-
-
-
-
-
-            
-
-
-
+    },
+    "AppDev":
+    {
+        "title": "App Development",
+        "sub_title":"Keep your customers close with your mobile App",
+        "description": "We design, develop and maintain Android and ios apps that meet and serve your business needs.",
+        "right_app_heading1": "From idea to app",
+        "right_app_content1": "Share your idea, we will get you the App",
+        "right_app_heading2": "Which type of app?",
+        "right_app_content2": "We do both web and mobile Apps",
+        "right_app_heading3": "App maintenance",
+        "right_app_content3": "We design, develop and maintain your App for as long as you want",
+        "image":""
+    },
+    "ICT":
+    {
+        "title": "ICT",
+        "sub_title":"Pay and only use what you need",
+        "description": "Tailor your Information and Communication Technology solutions to support your business growth.",
+        "right_ICT_heading1": "Costs",
+        "right_ICT_content1": "Reduce your IT support cost by using cloud technologies, pay for what you use",
+        "right_ICT_heading2": "Networks and Servers",
+        "right_ICT_content2": {
+            "bullet1": "• Your IT infrastructure in the hands of reliable IT professionals",
+            "bullet2": "• We design,  implement and manage LAN and WAN Networks"
+        },
+        "right_ICT_heading3": "Device Management",
+        "right_ICT_content3": {
+            "bullet3":"• Biometric attendance system",
+            "bullet4":"• CCTV installation and cameras",
+            "bullet5":"• Collaboration equipment (Video conferencing)",
+            "bullet6":"• Mobile Device Management (MDM)"
+        },
+        "right_ICT_heading4": "Lease Cloud services at affordable cost",
+        "right_ICT_content4": {
+            "bullet7":"• Have your IT cloud infrastructure designed and managed by professionals ",
+            "bullet8":"• Increase your security by leasing anti-virus services"
         }
+    },
+    "DigitalMkt":
+    {
+        "title": "Digital & Social Media Marketing",
+        "sub_title":"Create a digital identity and mindset for your products, services or business that attracts customers",
+        "description":"Are you wondering how you can make your website popular or what can you do to attract and retain more users.",
+        "right_dm_heading1": "Customers",
+        "right_dm_content1": "Attract customers to your website",
+        "right_dm_heading2": "Analytics",
+        "right_dm_content2": "know how many people visited your website today",
+        "right_dm_heading3": "Identity",
+        "right_dm_content3": "Create a social media identity for your business",
+        "image":""
+    },
+    "Multimedia":
+    {
+        "title": "Multimedia & Graphics Design",
+        "sub_title":"Designs that resonate with your needs",
+        "description":"The best media and designs experiences are built by TeCloud Platform. We build you your desire.",
+        "right_mul_heading1": "Social media identity",
+        "right_mul_content1": "Flyers that suit your Facebook, YouTube, LinkedIn, Twitter, instagram business pages",
+        "right_mul_heading2": "Your eyes with the best moments",
+        "right_mul_content2": "Photography that capture best moments in weddings, Parties, shows",
+        "right_mul_heading3": "Designs",
+        "right_mul_content3": "Logos, Business card, Banners, Annual Report templates and many more",
+        "right_mul_heading4": "Multimedia",
+        "right_mul_content4": "Concept development for reality shows, Video shooting, editing etc."
+    },
+    "Inncubation":
+    {
+        "title": "Incubation Hub",
+        "sub_title":"We translate your ideas into innovative products or services",
+        "description":"We believe that there are people who have great ideas but lack the resources and skills to transform those ideas.",
+        "right_innc_heading1": "New ideas",
+        "right_innc_content1": "Your ideas are yours, we just help turn them into innovations for you",
+        "right_innc_heading2": "You will get", 
+        "right_innc_content2": {
+            "bullet1":"• Confidentiality and right to your idea",
+            "bullet2":"• A business model",
+            "bullet3":"• A business plan",
+            "bullet4":"• An MVP",
+            "bullet5":"• Mentorship on startup your business",
+            "bullet6":"• Support to reach investors"
+        },
+        "Innovation":
+        {
+            "title": "Innovation Hub",
+            "sub_title":"Become an IT and software development professional",
+            "description":"Add value to what you do by joining an agile team to increase your professionalism and love for what you do. You can join any of our teams, designers, IT, developers or product managers to learn the skills required to become a professional.",
+            "right_inno_heading1": "Increase your Agility",
+            "right_inno_content1": "Develop and internalize a mindset appropriate for software development by joining one of our teams",
+            "right_inno_heading2": "From Zero to Hero",
+            "right_inno_content2": "Learn how to code from scratch, no prerequisites and interact with experienced developers",
+            "right_inno_heading3": "Face Reality",
+            "right_inno_content3": "An opportunity to work in real life projects and put your skills to work",
+            "right_inno_heading4": "How to Join?",
+            "right_inno_content4": "It’s simple, just contact us"
+        }
+    }
 
 
 

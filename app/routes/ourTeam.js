@@ -4,65 +4,58 @@ var router = express.Router();
 
 //get the index
 router.get('/ourTeam', (req, res, next) =>{
-   
-    //requiring the teamData variable from server
-    // var getManagersData = req.app.get('managersData'); //getting the managers data from the members array
-    // var getDevelopersData = req.app.get('developersData'); //getting the developers data from the developers array
-    // var sendManagersData = getManagersData.managers; //sending the managers data from the members array
-    // var sendDevelopersData = getDevelopersData.developers; //sending the developers data from the developers array
 
+    //acquiring the teamData variable from server
     var getTeamData = req.app.get('teamMembersData');
-    var sendManagersData = getTeamData.managers;
-    var sendDevelopersData = getTeamData.developers;
 
+    /* These are the global variables that will hold the retrived json array data from the team members json file */
+    var fetchedManagersData = getTeamData.members.managers; 
+    var fetchedDevelopersData = getTeamData.members.developers;
+   
     //response
     res.render('ourTeam', {
         pageTitle: "team",
         pageID: "ourTeamPage",
-        ourManagersData: sendManagersData,
-        ourDevelopersData: sendDevelopersData
+        ourManagersData: fetchedManagersData,
+        ourDevelopersData: fetchedDevelopersData
         
     });
 });
 
-router.get('/ourTeam/:memberid', (req, res, next) =>{
+router.get('/ourTeam/:memberid', (req, res, next) =>{ 
 
-    //requiring the teamData variable from server
-    // var getManagersData = req.app.get('managersData'); //getting the managers data from the members array
-    // var getDevelopersData = req.app.get('developersData'); //getting the developers data from the developers array
-    // var sendManagersData = getManagersData.managers; //sending the managers data from the members array
-    // var sendDevelopersData = getDevelopersData.developers; //sending the developers data from the developers array
-
+    //acquiring the teamData variable from server
     var getTeamData = req.app.get('teamMembersData');
-    var sendManagersData = getTeamData.managers;
-    var sendDevelopersData = getTeamData.developers;
 
+    /* These variables will hold the retrived json array data from the team members json file */
+    var fetchedManagersData = getTeamData.members.managers; 
+    var fetchedDevelopersData = getTeamData.members.developers;
+
+    //this array variable will hold the list of team members
     var teamMembers = [];
 
-    //looping through the managers array
-    getTeamData.managers.forEach(function(item){
+    //looping through the managers array to get the requested member detail
+    fetchedManagersData.forEach(function(item){
         //only do this is the request for the member is made
         if(item.shortname == req.params.memberid) {
-            teamMembers.push(item);
+            teamMembers.push(item); //pushing the memeber data to the array
         }
-        
     });
 
-    //looping through the developers array
-    getTeamData.developers.forEach(function(item){
+    //looping through the developers array to get the requested member detail
+    fetchedDevelopersData.forEach(function(item){
         //only do this is the request for the member is made
         if(item.shortname == req.params.memberid) {
-            teamMembers.push(item);
+            teamMembers.push(item); //pushing the data to the array
         }
-        
     });
 
     //response
     res.render('ourTeam', {
-        pageTitle: "member info",
+        pageTitle: "team",
         pageID: "memberDetail",
-        ourManagersData: sendManagersData,
-        ourDevelopersData: sendDevelopersData
+        ourManagersData: teamMembers,
+        ourDevelopersData: teamMembers
         
     });
 });

@@ -141,11 +141,11 @@ nav img{
 }
 
 .index-services .card h4{
-    font-size: 15px ;
+    font-size: 14px ;
 }
 
 .index-services .card p{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 
@@ -221,7 +221,7 @@ nav img{
 }
 
 .services .big-card p{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .services .big-card .card:hover{
@@ -230,7 +230,7 @@ nav img{
 }
 
 .services .big-card .card h4{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .services .big-card .card h5{
@@ -494,9 +494,6 @@ nav img{
 }
 
 /* ourTeam page styles */
-
- /* colors*/
-
 .ourTeam .teal-text {
     color: #700080 !important;
     font-weight: bold !important;
@@ -524,7 +521,6 @@ nav img{
 
 .ourTeam h5{
     font-size: 18px !important;
-
 }
 
 /* card image styles */
@@ -551,21 +547,70 @@ nav img{
 }
 
  /* card, card-content, card-action styles */
-.ourTeam .card .card-content{
+/* .ourTeam .card .card-content{
     padding-left: 10px !important;
+} */
+
+.ourTeam .card .card-content p{
+    font-size: 13px;
 }
 
-.ourTeam .card .card-content .sumDetails .card-title{
-    font-size: 19px !important;
-    padding: 13px 5px !important;
-    color: #34495e !important;
+.ourTeam .card .card-content .sumDetails .card-title a{
+    font-size: 18px !important;
+    padding: 5px 0 !important;
+    color: #00B0F0 !important;
+    transition: 1s ease-out;
+}
+
+.ourTeam .card .card-content .sumDetails .card-title a:hover{
+    color: #ccc !important;
+    transition: 1s ease-in;
+}
+
+.ourTeam .card .card-content .sumDetails .card-title:hover{
+    color: #ffcc00;
 }
 
 .ourTeam .card .card-content .sumDetails p{
-    padding-top: 1px !important;
-    font-size: 16px !important;
+    font-size: 13px !important;
     padding-bottom: 4px !important;
-    color: #7f8c8d;
+    color: rgb(170, 170, 170) !important;
+}
+
+.line{
+    height: 3px;
+    width: 70px;
+    margin: 10px 80px;
+    background-color: #700080;
+}
+
+.view-profile-btn a{
+    list-style: none;
+    color: rgb(56, 54, 54);
+    text-align: center;
+    font-size: 12px;
+    transition: 1s ease-out;
+}
+
+.view-profile-btn a:hover{
+    color: white;
+    transition: 1s ease-in;
+
+}
+
+.view-profile-btn {
+    width: 120px;
+    margin: 10px 0 0 50px !important;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    transition: 1s ease-out;
+}
+
+.view-profile-btn:hover {
+    /* background-color: #d53ce9; */
+    background-color: #700080;
+    transition: 1s ease-in;
+    
 }
 
 .ourTeam .card .card-action{
@@ -648,26 +693,15 @@ nav img{
     opacity: 1;
 }
 
-.line{
-    height: 3px;
-    width: 70px;
-    margin: 15px 90px;
-    background-color: #700080;
-}
-
-.view-profile{
-    font: 14px !important;
-    text-align: center !important;
-}
-
 #memberDetail .memberBigImg{
-    width: 400px;
-    height: 400px;
-    padding: 100px 0 0 0;
+    width: 450px;
+    height: 450px;
+    margin: -550px 0 0 40px;
+    border-radius: 2%;
 }
 
 .description{
-    padding: 100px 0 0 0;
+    margin: 100px 0 0 0;
 }
 
 

@@ -8,7 +8,7 @@
             <% if(pageID == 'ourTeamPage') {%>
                 <div class="card">
                     <div class="card-image responsive">
-                        <img src="/images/teamImages/<%= member.shortname %>.jpg">
+                        <img src="/images/teamImages/<%= member.shortname %>_tp.jpg">
                     </div>
                     <div class="card-content">
                         <div class="sumDetails">
@@ -35,15 +35,20 @@
                 </div>
             <% } %> 
         </div>
-            <!-- changing the page view if the page not matches the ourTeamPage -->
-            <!-- <% if(pageID !== 'ourTeamPage') {%>
-                <div class="col s12 m7"><%- member.description %></div>
-            <% } %> -->
-            <!-- check if the pageID is member details -->
-            <!-- <% if(pageID == 'memberDetail'){%>
-                <div class="col s12 m5 pull-m1">
+
+        <!-- changing the page view if the page not matches the ourTeamPage -->
+        <% if(pageID == 'memberDetail') {%>
+            
+            <!-- <div class="row">
+                <div class="col s12 m4 pull-m3">
                     <img src="/images/teamImages/<%= member.shortname %>.jpg" alt="Photo of <%= member.name %>" class="materialboxed memberBigImg">
                 </div>
-            <% } %> -->
+                <div class="col s12 m7 right description"><%- member.description %></div>
+                
+            </div> -->
+            
+        <% } %>
+
+
     <%});%>
 </div>

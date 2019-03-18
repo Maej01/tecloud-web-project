@@ -14,18 +14,19 @@
                         </div>
                         <div class="card-content">
                             <div class="sumDetails">
-                                <span class="card-title center"><a href="/ourTeam/<%= member.shortname%>"><b><%= member.name %></b></a></span>
+                                <span class="card-title center"><a href="/ourTeam/<%= member.shortname %>"><b><%= member.name %></b></a></span>
                                 <p class="center"><%= member.role %></p>
-                                <div class="center line"></div>
+                                <div class="line center"></div>
                             </div>
                             <p class="hide-on-small-only"><%- member.summary %></p>
-                            <a href="/ourTeam/<%= member.shortname%>" class="readMoreText">view profile</a>
+                            <div class="view-profile-btn center">
+                                <a href="/ourTeam/<%= member.shortname %>">view profile</a>
+                            </div>
                         </div>
                         <div class="card-action">
                             <span>Follow on</span>
                             <a href="#" class="tooltip" target="_blank" id="social_media_icons">
-                                <i class="fab fa-facebook"></i><span class="tooltip-text">Facebook</span>
-                            </a>
+                                <i class="fab fa-facebook"></i><span class="tooltip-text">Facebook</span></a>
                             <a href="#" class="tooltip" target="_blank"  id="social_media_icons">
                                 <i class="fab fa-twitter"></i><span class="tooltip-text">Twitter</span></a> 
                             <a href="#" class="tooltip" target="_blank" id="social_media_icons">
@@ -37,26 +38,16 @@
                 <%}%>
             </div>
 
-            <!-- modal -->
-            
-
             <!-- changing the page view if the page not matches the ourTeamPage -->
-            <% if(pageID !== 'ourTeamPage' && pageID == 'memberDetail') {%>
-                <!-- <div class="memberDetailBanner">
-                    <h5 class="left"><%= member.name%></h5>
-                </div> -->
+            <% if(pageID == 'memberDetail') {%>
                 <div class="row">
-                    <div class="col s12 m7 right description"><%- member.description %></div>
-                    <div class="col s12 m5 pull-m1">
+                    <div class="col s12 m8 push-m1 description"><%- member.description %></div>
+                    <div class="col s12 m3 pull-m2">
                         <img src="/images/teamImages/<%= member.shortname %>.jpg" alt="Photo of <%= member.name %>" class="materialboxed memberBigImg">
                     </div>
                 </div>
                 
             <% } %>
-            <!-- check if the pageID is member details -->
-            <!-- <% if(pageID == 'memberDetail'){%>
-                
-            <% } %> -->
         <%});%>
     </div>
 </div>
