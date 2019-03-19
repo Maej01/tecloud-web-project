@@ -13,11 +13,9 @@
                             <img src="/images/teamImages/<%= member.shortname %>_tp.jpg">
                         </div>
                         <div class="card-content">
-                            <div class="sumDetails">
-                                <span class="card-title center"><a href="/ourTeam/<%= member.shortname %>"><b><%= member.name %></b></a></span>
-                                <p class="center"><%= member.role %></p>
-                                <div class="line center"></div>
-                            </div>
+                            <span class="card-title center"><a href="/ourTeam/<%= member.shortname %>"><b><%= member.name %></b></a></span>
+                            <h5 class="center"><%= member.role %></h5>
+                            <div class="line center"></div>
                             <p class="hide-on-small-only"><%- member.summary %></p>
                             <div class="view-profile-btn center">
                                 <a href="/ourTeam/<%= member.shortname %>">view profile</a>
@@ -46,7 +44,6 @@
                         <img src="/images/teamImages/<%= member.shortname %>.jpg" alt="Photo of <%= member.name %>" class="materialboxed memberBigImg">
                     </div>
                 </div>
-                
             <% } %>
         <%});%>
     </div>

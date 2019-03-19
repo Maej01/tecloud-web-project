@@ -4,7 +4,9 @@
 <header class="navbar-fixed">  
     <nav class="nav-wrapper black">
         <div class="container">
-            <a href="/" class="brand-logo"><img src="images/TeCloud-Logo-Transparent.png" alt=""></a>
+            <% if(pageID == 'home' || pageID == 'about' || pageID == 'services' || pageID == 'ourTeamPage' || pageID == 'memberDetail') {%>
+                <a href="/" class="brand-logo"><img src="images/TeCloud-Logo-Transparent.png" alt="logo"></a>
+            <%}%>
             <a href="#"  class="sidenav-trigger" data-target="mobile-view">
                 <i class="material-icons ">menu</i>
             </a>

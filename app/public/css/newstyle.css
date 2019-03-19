@@ -202,16 +202,19 @@ nav img{
 }
 
 #services {
-    background-image: url(../images/hdbg3.png);
+    /* background-image: url(../images/hdbg3.png); */
+    background-image: linear-gradient(#16bffd,#cb3066);
     height: 100%;
     width: 100%;
 }
 
 #services_main_tip{
     padding-top: 50px;
+    color: #ececec;
 }
 #services_tip{
     padding-bottom: 50px;
+    color: rgb(216, 216, 216);
 }
 
 .services .btn-small {
@@ -472,7 +475,6 @@ nav img{
 }
 
 #footer-copyright{
-    /* position:  absolute !important; */
     margin-top: 18px;
 }
 
@@ -482,10 +484,15 @@ nav img{
     font-size: 18px !important;
 }
 
+#social_media_icons i:hover{
+    color: #ccc !important;
+}
+
 
 /* our team page style */
 .ourTeam{
-    background-image: url(../images/hdbg3.png);
+    /* background-image: url(../images/what-the-hex.png); */
+    background-image: linear-gradient(#16bffd,#cb3066);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -497,10 +504,6 @@ nav img{
 .ourTeam .teal-text {
     color: #700080 !important;
     font-weight: bold !important;
-}
-
-.ourTeam a .teal-text {
-    color: #00A4F5 !important;
 }
 
 .ourTeam h1{
@@ -525,20 +528,25 @@ nav img{
 
 /* card image styles */
 .ourTeam .card{
-    border-radius: 5px !important;
-    width: 280px !important;
+    border-radius: 5% !important;
+    width: 260px !important;
 }
+
 .ourTeam .card-image {
     align-content: center;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
     width: 100% !important;
+    border-top-left-radius: 5% !important;
+    border-top-right-radius: 5% !important;
 }
+
 .ourTeam .card-image img {
-    height: 275px !important;
+    height: 260px !important;
     transition: 0.5s ease-out;
 }
+
 .ourTeam .card-image:hover img {
     overflow: hidden;
     -webkit-transform: scale(1.18);
@@ -547,40 +555,38 @@ nav img{
 }
 
  /* card, card-content, card-action styles */
-/* .ourTeam .card .card-content{
-    padding-left: 10px !important;
-} */
 
 .ourTeam .card .card-content p{
     font-size: 13px;
 }
 
-.ourTeam .card .card-content .sumDetails .card-title a{
+.ourTeam .card .card-content .card-title a{
     font-size: 18px !important;
     padding: 5px 0 !important;
     color: #00B0F0 !important;
     transition: 1s ease-out;
 }
 
-.ourTeam .card .card-content .sumDetails .card-title a:hover{
+.ourTeam .card .card-content .card-title a:hover{
     color: #ccc !important;
     transition: 1s ease-in;
 }
 
-.ourTeam .card .card-content .sumDetails .card-title:hover{
-    color: #ffcc00;
-}
 
-.ourTeam .card .card-content .sumDetails p{
+.ourTeam .card .card-content h5{
     font-size: 13px !important;
     padding-bottom: 4px !important;
     color: rgb(170, 170, 170) !important;
 }
 
+.dev-container{
+    margin-left: 35px !important;
+}
+
 .line{
     height: 3px;
     width: 70px;
-    margin: 10px 80px;
+    margin: 10px 70px;
     background-color: #700080;
 }
 
@@ -625,19 +631,9 @@ nav img{
 }
 
 .ourTeam .card-action a {
-    margin-left: 8px !important;
+    margin-left: 5px !important;
     height: 20px !important;
-    width: 20px !important
-}
-
-.ourTeam .card .actionBg a .teal-text{
-    color: #FFD900 !important;
-    height: 20px !important;
-    width: 20px !important
-}
-
-.ourTeam .row-count .card{
-    margin-bottom: 50px !important;
+    width: 10px !important
 }
 
  /* picture box view */
