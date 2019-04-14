@@ -6,17 +6,15 @@
     <div class="row">
         <% ourDevelopersData.forEach(function(member){ %>
             <div class="col s12 m3">
-                <% if(pageID == 'ourTeamPage') {%>
+                <!-- <% if(pageID == 'ourTeamPage') {%> -->
                     <div class="card z-depth-1">
                         <div class="card-image">
                             <img src="/images/teamImages/<%= member.shortname %>_tp.jpg">
                         </div>
                         <div class="card-content">
-                            <!-- <div class="sumDetails"> -->
-                                <span class="card-title center"><a href="/ourTeam/<%= member.shortname%>"><%= member.name %></a></span>
-                                <h5 class="center"><%= member.role %></h5>
-                                <div class="center line"></div>
-                            <!-- </div> -->
+                            <span class="card-title center"><a href="/ourTeam/<%= member.shortname%>"><%= member.name %></a></span>
+                            <h5 class="center"><%= member.role %></h5>
+                            <div class="center line"></div>
                             <p class="hide-on-small-only"><%= member.summary %></p>
                             <div class="view-profile-btn center">
                                 <a href="/ourTeam/<%= member.shortname %>">view profile</a>
@@ -36,9 +34,21 @@
                                 <i class="fab fa-instagram"></i><span class="tooltip-text">Instagram</span></a>
                         </div>
                     </div>
-                <% } %> 
+                <!-- <% } %>  -->
             </div> 
-
+            <!-- changing the page view if the page not matches the ourTeamPage -->
+            <!-- <% if(pageID == 'memberDetail') {%>
+                <div class="row">
+                    <div class="col s12 m8 push-m1 description">
+                        <%- member.description %>
+                        <a class="btn-small backbtn" href="/ourTeam" class="tooltip-text">
+                            <i class="material-icons">chevron_left</i></a>
+                    </div>
+                    <div class="col s12 m3 pull-m2">
+                        <img src="/images/teamImages/<%= member.shortname %>.jpg" alt="Photo of <%= member.name %>" class="materialboxed memberBigImg">
+                    </div>
+                </div>
+            <% } %> -->
         <%});%>
     </div>
 </div>

@@ -28,25 +28,28 @@ router.get('/ourTeam/:memberid', (req, res, next) =>{
     var getTeamData = req.app.get('teamMembersData');
 
     /* These variables will hold the retrived json array data from the team members json file */
-    var fetchedManagersData = getTeamData.members.managers; 
-    var fetchedDevelopersData = getTeamData.members.developers;
+    // var fetchedManagersData = getTeamData.members.managers; 
+    // var fetchedDevelopersData = getTeamData.members.developers;
+
+    var fetchedData = getTeamData.members; 
 
     //this array variable will hold the list of team members
-    var teamMembers = [];
+    var managingMembers = [];
+    var devMembers = [];
 
-    //looping through the managers array to get the requested member detail
-    fetchedManagersData.forEach(function(item){
+    // //looping through the managers array to get the requested member detail
+    fetchedData.managers.forEach(function(item){
         //only do this is the request for the member is made
         if(item.shortname == req.params.memberid) {
-            teamMembers.push(item); //pushing the memeber data to the array
+            managingMembers.push(item); //pushing the memeber data to the array
         }
     });
 
-    //looping through the developers array to get the requested member detail
-    fetchedDevelopersData.forEach(function(item){
+    // //looping through the developers array to get the requested member detail
+    fetchedData.developers.forEach(function(item){
         //only do this is the request for the member is made
         if(item.shortname == req.params.memberid) {
-            teamMembers.push(item); //pushing the data to the array
+            devMembers.push(item); //pushing the data to the array
         }
     });
 
@@ -54,8 +57,8 @@ router.get('/ourTeam/:memberid', (req, res, next) =>{
     res.render('ourTeam', {
         pageTitle: "team",
         pageID: "memberDetail",
-        ourManagersData: teamMembers,
-        ourDevelopersData: teamMembers
+        ourManagersData: managingMembers,
+        ourDevelopersData: devMembers
         
     });
 });

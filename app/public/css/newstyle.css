@@ -202,15 +202,13 @@ nav img{
 }
 
 #services {
-    /* background-image: url(../images/hdbg3.png); */
-    background-image: linear-gradient(#16bffd,#cb3066);
-    height: 100%;
-    width: 100%;
+    background-image: linear-gradient(#cb3066 -10%, #cb3066 -10%, #16bffd) !important;
 }
 
 #services_main_tip{
     padding-top: 50px;
     color: #ececec;
+    font-size: 25px !important;
 }
 #services_tip{
     padding-bottom: 50px;
@@ -228,7 +226,7 @@ nav img{
 }
 
 .services .big-card .card:hover{
-    box-shadow: 0px 15px 10px rgb(194, 194, 194);
+    box-shadow: 0px 0px 10px #9de1fa;
     transition: 1s;
 }
 
@@ -241,14 +239,11 @@ nav img{
 }
 
 .services .small-cards .card{
-    /* background-color: #7030a8 !important; */
-    /* background-color: rgb(128,128,128); */
     background-color: #eeeeee;
-    /* background-color: rgb(127,127,127); */
 }
 
 .services .small-cards .card:hover{
-    box-shadow: 0px 15px 10px rgb(194, 194, 194);
+    box-shadow: 0px 3px 10px rgb(194, 194, 194);
 }
 
 .services .small-cards .card h6{
@@ -267,7 +262,7 @@ nav img{
 }
 
 .services_contents .big-card .card{
-    height: 43vh !important;
+    height: 35vh !important;
     margin-left: 50px;
 }
 
@@ -297,14 +292,18 @@ nav img{
     height: 30vh !important;
 }  
 
-
 /* ABOUT SECTION STYLES */
 #about{
-    background-color: #f3f0f0;
+    background-image: radial-gradient(circle,#16bffd,#cb3066);
 }
 
 .about-header-card{
     padding-top: 100px;
+}
+
+.about-header-card .card{
+    background-color: #cccccc !important;
+    /* background-color: rgb(211, 206, 216) !important; */
 }
 
 .about-header-card h2{
@@ -315,6 +314,8 @@ nav img{
 .about-header-card h3{
     font-size: 20px;
     margin-top: -20px;
+    color: #5c5b5b;
+    font-size: 15px;
 }
 
 .aboutCards{
@@ -359,6 +360,21 @@ nav img{
     transform: translate(180%, -90%);
     background-color: #7030a8;
     color: #fff;
+}
+
+.aboutCards .card p{
+    color: rgb(97, 93, 93);
+}
+
+.core-values .card-content ul li a{
+    color: rgb(97, 93, 93) !important;
+    transition: 0.5s ease-out;
+}
+
+.core-values .card-content ul li a:hover{
+    color: #7030a8 !important;
+    font-size: 15px;
+    transition: 0.5s ease-in;
 }
 
 .container .row .bg-of-soft-team img{
@@ -422,6 +438,10 @@ nav img{
     color: green;
 }
 
+#ourTeamUl ul li{
+    font-size: 14px !important;
+}
+
 .core-values ul li{
     list-style: none;
 }
@@ -432,9 +452,7 @@ nav img{
 
 /* contact style */
 #contact {
-    background-image: url(../images/hdbg3.png);
-    height: 100%;
-    width: 100%;
+    background-image: linear-gradient(#cb3066 -10%, #cb3066 -10%, #16bffd) !important;
 }
 
 .contact-page-container{
@@ -488,11 +506,10 @@ nav img{
     color: #ccc !important;
 }
 
-
 /* our team page style */
 .ourTeam{
     /* background-image: url(../images/what-the-hex.png); */
-    background-image: linear-gradient(#16bffd,#cb3066);
+    background-image: radial-gradient(circle,#16bffd,#cb3066);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -518,18 +535,20 @@ nav img{
 }
 
 .ourTeam h4{
-    font-size: 20px !important;
+    font-size: 25px !important;
     padding-bottom: 5%;
 }
 
 .ourTeam h5{
     font-size: 18px !important;
+    margin-top: -40px; 
 }
 
 /* card image styles */
 .ourTeam .card{
     border-radius: 5% !important;
     width: 260px !important;
+    margin-top: -25px;
 }
 
 .ourTeam .card-image {
@@ -543,7 +562,7 @@ nav img{
 }
 
 .ourTeam .card-image img {
-    height: 260px !important;
+    height: 170px !important;
     transition: 0.5s ease-out;
 }
 
@@ -555,6 +574,9 @@ nav img{
 }
 
  /* card, card-content, card-action styles */
+.ourTeam .card .card-content {
+    height: 150px !important;
+}
 
 .ourTeam .card .card-content p{
     font-size: 13px;
@@ -562,7 +584,7 @@ nav img{
 
 .ourTeam .card .card-content .card-title a{
     font-size: 18px !important;
-    padding: 5px 0 !important;
+    margin: 4px 0 !important;
     color: #00B0F0 !important;
     transition: 1s ease-out;
 }
@@ -572,15 +594,25 @@ nav img{
     transition: 1s ease-in;
 }
 
-
 .ourTeam .card .card-content h5{
     font-size: 13px !important;
-    padding-bottom: 4px !important;
+    margin: 10px 0 4px 0 !important;
     color: rgb(170, 170, 170) !important;
 }
 
 .dev-container{
-    margin-left: 35px !important;
+    margin-left: 29px !important;
+}
+
+.dev-container .card{
+    border-radius: 5% !important;
+    width: 260px !important;
+    margin-top: 25px;
+}
+.dev-container h3{
+    padding: 80px 0 25px 0;
+    font-size: 20px;
+    color: #dbdbdb;
 }
 
 .line{
@@ -689,15 +721,25 @@ nav img{
     opacity: 1;
 }
 
-#memberDetail .memberBigImg{
-    width: 450px;
-    height: 450px;
-    margin: -550px 0 0 40px;
+.memberBigImg img{
+    width: 500px !important;
+    height: 450px !important;
+    margin: 100px 0 0 60px;
     border-radius: 2%;
 }
 
 .description{
-    margin: 100px 0 0 0;
+    margin: -450px 0 0 70px !important;
+}
+
+.backbtn{
+    background-color: #7030a8 !important;
+    box-shadow: 0px 15px 10px rgb(184, 180, 180);
+    transition: 1s;
+}
+
+.backbtn i{
+    font-size: 30px !important;
 }
 
 

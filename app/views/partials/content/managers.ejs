@@ -1,12 +1,13 @@
 <!-- main about section-->
-<% if(pageID == 'ourTeamPage'){%>
-    <h5 class="center" id="services_tip">Managing Partners</h5>
-<% } %>
+
 <!-- managing partners container -->
-<div class="container">
-    <div class="row">
-        <% ourManagersData.forEach(function(member){ %>
-            <div class="col s12 m4 l4">
+<div class="row ">
+    <% if(pageID == 'ourTeamPage'){%>
+        <h5 class="center" id="services_tip">Managing Partners</h5>
+    <%}%>
+    <% ourManagersData.forEach(member => { %>
+        <div class="container">
+            <div class="col s12 m4">
                 <% if(pageID == 'ourTeamPage'){ %>
                     <div class="card">
                         <div class="card-image responsive">
@@ -16,7 +17,7 @@
                             <span class="card-title center"><a href="/ourTeam/<%= member.shortname %>"><b><%= member.name %></b></a></span>
                             <h5 class="center"><%= member.role %></h5>
                             <div class="line center"></div>
-                            <p class="hide-on-small-only"><%- member.summary %></p>
+                            <!-- <p class="hide-on-small-only"><%- member.summary %></p> -->
                             <div class="view-profile-btn center">
                                 <a href="/ourTeam/<%= member.shortname %>">view profile</a>
                             </div>
@@ -34,17 +35,71 @@
                         </div>
                     </div>
                 <%}%>
-            </div>
-
-            <!-- changing the page view if the page not matches the ourTeamPage -->
-            <% if(pageID == 'memberDetail') {%>
-                <div class="row">
-                    <div class="col s12 m8 push-m1 description"><%- member.description %></div>
-                    <div class="col s12 m3 pull-m2">
-                        <img src="/images/teamImages/<%= member.shortname %>.jpg" alt="Photo of <%= member.name %>" class="materialboxed memberBigImg">
-                    </div>
+            </div> 
+        </div>
+        <% if(pageID != 'ourTeamPage'){%>
+            <div class="row">
+                <div class="col s12 m5 push-m2 memberBigImg">
+                    <img src="/images/teamImages/<%= member.shortname %>.jpg" alt="Photo of <%= member.name %>" class="materialboxed responsive-img ">             
                 </div>
-            <% } %>
-        <%});%>
+                <div class="col s12 m6 description">
+                    <%- member.description %>
+                    <a class="btn-small backbtn" href="/ourTeam" class="tooltip-text">
+                        <i class="material-icons prefix">chevron_left</i></a>
+                </div>
+            </div>
+        <%}%>
+    <%});%> <!-- end of for each loop -->
+</div>
+<div class="dev-container">
+    <div class="row">
+        <% if(pageID == 'ourTeamPage'){%>
+            <h3 class="center">Development Team</h3>
+        <%}%>
+        <% ourDevelopersData.forEach(member => { %>
+            <div class="col s12 m3">
+                <% if(pageID == 'ourTeamPage'){ %>
+                    <div class="card">
+                        <div class="card-image responsive">
+                            <img src="/images/teamImages/<%= member.shortname %>_tp.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title center"><a href="/ourTeam/<%= member.shortname %>"><b><%= member.name %></b></a></span>
+                            <h5 class="center"><%= member.role %></h5>
+                            <div class="line center"></div>
+                            <!-- <p class="hide-on-small-only"><%- member.summary %></p> -->
+                            <div class="view-profile-btn center">
+                                <a href="/ourTeam/<%= member.shortname %>">view profile</a>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <span>Follow on</span>
+                            <a href="#" class="tooltip" target="_blank" id="social_media_icons">
+                                <i class="fab fa-facebook"></i><span class="tooltip-text">Facebook</span></a>
+                            <a href="#" class="tooltip" target="_blank"  id="social_media_icons">
+                                <i class="fab fa-twitter"></i><span class="tooltip-text">Twitter</span></a> 
+                            <a href="#" class="tooltip" target="_blank" id="social_media_icons">
+                                <i class="fab fa-linkedin"></i><span class="tooltip-text">Linkedin</span></a>
+                            <a href="#" class="tooltip" target="_blank" id="social_media_icons">
+                                <i class="fab fa-instagram"></i><span class="tooltip-text">Instagram</span></a>
+                        </div>
+                    </div>
+                <%}%>
+            </div> 
+            <% if(pageID != 'ourTeamPage'){%>
+                <section class="">
+                    <div class="row">
+                        <div class="col s12 m5 push-m3 memberBigImg">
+                            <img src="/images/teamImages/<%= member.shortname %>.jpg" alt="Photo of <%= member.name %>" class="materialboxed responsive-img ">             
+                        </div>
+                        <div class="col s12 m6 description">
+                            <%- member.description %>
+                            <a class="btn-small backbtn" href="/ourTeam" class="tooltip-text">
+                                <i class="material-icons prefix">chevron_left</i></a>
+                        </div>
+                    </div>
+                </section>
+            <%}%>
+        <%});%> <!-- end of for each loop -->
     </div>
 </div>
